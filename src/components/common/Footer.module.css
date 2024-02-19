@@ -84,13 +84,13 @@
 
 @media (max-width: 768px) {
   .footer {
-    height: 330px;
+    height: 400px;
   }
 
   .footerTop {
     max-width: 320px;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     margin-bottom: 30px;
   }
 
@@ -99,7 +99,9 @@
   }
 
   .menu {
+    flex-direction: column;
     gap: 16px;
+    height: auto;
   }
 
   .menuLink {

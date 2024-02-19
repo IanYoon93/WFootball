@@ -36,6 +36,14 @@
 }
 
 @media (max-width: 768px) {
+  .productList {
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    grid-auto-columns: minmax(220px,1fr);
+    overflow-x: auto;
+    grid-auto-flow: column;
+    height: 360px;
+  }
+
   .productInfo {
     font-size: 14px;
   }
