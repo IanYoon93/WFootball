@@ -1,0 +1,124 @@
+.main {
+  padding: 80px 0;
+  background: #202124;
+  border-bottom: 1px solid #434040;
+}
+
+.contentCategory {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.breadCrumbs {
+  display: flex;
+}
+
+.breadCrumbsList {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.breadCrumbsList:first-child {
+  font-weight: 500;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #fff;
+}
+
+.contentSort {
+  display: flex;
+  gap: 10px;
+}
+
+.selectOption {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 35px;
+  padding: 0 10px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #cacacb;
+  border-radius: 30px;
+}
+
+.selectBox {
+  width: 100%;
+  text-align: start;
+}
+
+@media (max-width: 1280px) {
+  .main {
+    padding: 70px 0;
+  }
+
+  .contentCategory {
+    max-width: 1024px;
+    padding: 50px 32px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .selectOption {
+    width: 60px;
+    height: 30px;
+  }
+
+  .selectBox {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 60px 0;
+  }
+
+  .contentCategory {
+    padding: 30px 16px 0;
+  }
+
+  .contentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .contentSort {
+    gap: 5px;
+  }
+
+  .selectOption {
+    width: 50px;
+  }
+
+  .selectBox {
+    font-size: 13px;
+  }
+}
