@@ -1,5 +1,5 @@
 import styles from './MainProduct.module.css';
-import ProductList from './ProductList';
+import ProductList from '../Product/ProductList';
 
 export default function MainProduct() {
   return (

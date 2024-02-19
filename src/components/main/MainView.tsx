@@ -1,4 +1,4 @@
-import MainProduct from '../Product/MainProduct';
+import MainProduct from './MainProduct';
 import styles from './MainView.module.css';
 import Slider from './Slider';
 
