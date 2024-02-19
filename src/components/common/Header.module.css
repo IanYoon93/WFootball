@@ -7,6 +7,7 @@
   height: 80px;
   padding: 0 16px;
   background: #202124;
+  border-bottom: 1px solid #434040;
   z-index: 10;
 }
 

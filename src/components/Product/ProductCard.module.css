@@ -1,0 +1,34 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.productInfo {
+  margin: 20px 0;
+  font-weight: 600;
+  text-align: start;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.subTitle {
+  font-weight: 500;
+  color: #707072;
+}
+
+.price {
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .productInfo {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+}
