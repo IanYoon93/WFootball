@@ -1,38 +1,33 @@
 import styles from './Footer.module.css';
 import { BsInstagram } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const menus = [
+    { name: 'football', title: '축구화/풋살화' },
+    { name: 'shoes', title: '런닝화/트레이닝화' },
+    { name: 'clothes', title: '의류' },
+    { name: 'accessory', title: '기타용품' },
+  ];
+
   return (
     <div className={styles.footer}>
       <div className={styles.footerTop}>
         <h1 className={styles.company}>
-          <a href="/">
+          <Link to="/">
             <img className={styles.logo} src="src/assets/logo.png" alt="더블유 풋볼 로고" />
-          </a>
+          </Link>
         </h1>
-        <ul className={styles.menu}>
-          <li className={styles.menuItem}>
-            <a href="/" className={styles.menuLink}>
-              축구화/풋살화
-            </a>
-          </li>
-          <li className={styles.menuItem}>
-            <a href="/" className={styles.menuLink}>
-              런닝/트레이닝화
-            </a>
-          </li>
-          <li className={styles.menuItem}>
-            <a href="/" className={styles.menuLink}>
-              의류
-            </a>
-          </li>
-          <li className={styles.menuItem}>
-            <a href="/" className={styles.menuLink}>
-              기타용품
-            </a>
-          </li>
-        </ul>
+        <div className={styles.menu}>
+          {menus.map((menu) => {
+            return (
+              <Link to={`/${menu.name}`} key={menu.name} className={styles.menuLink}>
+                {menu.title}
+              </Link>
+            );
+          })}
+        </div>
         <div className={styles.snsLink}>
           <a href="https://www.instagram.com/yoonmongguuuu/" rel="noreferrer noopener external" target="_blank" className={styles.snsItem}>
             <BsInstagram className={styles.snsIcon} />
