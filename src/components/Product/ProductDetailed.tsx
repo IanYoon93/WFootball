@@ -1,5 +1,7 @@
+import styles from './ProductDetailed.module.css';
+
 const ProductDetailed = (): JSX.Element => {
-  return <div>상세페이지</div>;
+  return <div className={styles.def}>상세페이지</div>;
 };
 
 export default ProductDetailed;
