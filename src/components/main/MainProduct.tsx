@@ -1,25 +1,25 @@
+// import { useRecoilValue } from 'recoil';
 import styles from './MainProduct.module.css';
-import MainProductList from './MainProductList';
+import MainProductList from '../Product/ProductList';
+// import { Product, productsAipList } from '../../store/products';
 
-export default function MainProduct() {
+const MainProduct = () => {
   return (
     <>
       <section className={styles.mainProduct}>
-        <h2 className={styles.title}>축구화/풋살화</h2>
-        <MainProductList />
+        <MainProductList title="축구화/풋살화" />
       </section>
       <section className={styles.mainProduct}>
-        <h2 className={styles.title}>런닝/트레이닝화</h2>
-        <MainProductList />
+        <MainProductList title="런닝화/트레이닝화" />
       </section>
       <section className={styles.mainProduct}>
-        <h2 className={styles.title}>의류</h2>
-        <MainProductList />
+        <MainProductList title="의류" />
       </section>
       <section className={styles.mainProduct}>
-        <h2 className={styles.title}>기타용품</h2>
-        <MainProductList />
+        <MainProductList title="기타용품" />
       </section>
     </>
   );
-}
+};
+
+export default MainProduct;

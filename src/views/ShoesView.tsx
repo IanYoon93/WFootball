@@ -1,7 +1,7 @@
 import { IoIosArrowDown } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
-import ProductList from '../components/Product/ProductList';
 import styles from './CategoryView.module.css';
+import ProductList from '../components/Product/ProductList';
 
 export default function ShoesView() {
   return (
@@ -38,7 +38,7 @@ export default function ShoesView() {
           </div>
         </div>
         <div>
-          <ProductList />
+          <ProductList title="런닝화/트레이닝화" />
         </div>
       </section>
     </div>

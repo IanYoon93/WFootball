@@ -1,7 +1,7 @@
 import { IoIosArrowDown } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
-import ProductList from '../components/Product/ProductList';
 import styles from './CategoryView.module.css';
+import ProductList from '../components/Product/ProductList';
 
 export default function AccessoryView() {
   return (
@@ -28,7 +28,7 @@ export default function AccessoryView() {
           </div>
         </div>
         <div>
-          <ProductList />
+          <ProductList title="기타용품" limit={40} />
         </div>
       </section>
     </div>
