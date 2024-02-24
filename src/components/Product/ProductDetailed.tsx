@@ -2,8 +2,8 @@ import { useRecoilValueLoadable } from 'recoil';
 import styles from './ProductDetailed.module.css';
 import { Product, productsList } from '../../store/products';
 import { useParams } from 'react-router-dom';
-import { IoIosArrowForward } from 'react-icons/io';
 import { useEffect, useState } from 'react';
+import BreadCrumbs from '../common/BreadCrumbs';
 
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
@@ -37,13 +37,7 @@ const ProductDetailed = (): JSX.Element => {
 
   return (
     <section className={styles.content}>
-      <div className={styles.breadCrumbs}>
-        <ul className={styles.breadCrumbsList}>
-          <li>축구화</li>
-          <IoIosArrowForward />
-          <li>축구화</li>
-        </ul>
-      </div>
+      <BreadCrumbs category={product.category} crumb={product.title} />
       <div className={styles.productDetail} key={product.id}>
         <img className={styles.productImg} src={product.img} alt="제품 이미지" onLoad={() => console.log('이미지 로드됨')} onError={() => console.log('이미지 로드 실패')} />
         <div className={styles.productInfo}>

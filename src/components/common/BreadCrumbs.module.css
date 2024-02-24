@@ -1,0 +1,14 @@
+.breadCrumbs {
+  display: flex;
+}
+
+.breadCrumbsList {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.breadCrumbsList:first-child {
+  font-weight: 500;
+}
