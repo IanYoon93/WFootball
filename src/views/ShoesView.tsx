@@ -30,7 +30,7 @@ export default function ShoesView() {
           </div>
         </div>
         <div>
-          <ProductList title="런닝화/트레이닝화" />
+          <ProductList title="런닝화/트레이닝화" limit={40} />
         </div>
       </section>
     </div>

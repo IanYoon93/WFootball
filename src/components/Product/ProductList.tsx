@@ -17,7 +17,7 @@ const defaultProps = {
   data: [],
 };
 
-const MainProductList = ({ title, limit }: Items): JSX.Element => {
+const ProductList = ({ title, limit }: Items): JSX.Element => {
   const ProductCard = React.lazy(() => import('./ProductCard'));
   const ProductsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   let products: Product[] = 'hasValue' === ProductsLoadable.state ? ProductsLoadable.contents : [];
@@ -52,6 +52,6 @@ const MainProductList = ({ title, limit }: Items): JSX.Element => {
   );
 };
 
-MainProductList.defaultProps = defaultProps;
+ProductList.defaultProps = defaultProps;
 
-export default MainProductList;
+export default ProductList;
