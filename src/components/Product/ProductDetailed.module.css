@@ -1,0 +1,161 @@
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.breadCrumbs {
+  display: flex;
+}
+
+.breadCrumbsList {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.breadCrumbsList:first-child {
+  font-weight: 500;
+}
+
+.productDetail {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+.productImg {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #fff;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+  color: #fff;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.sizeArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnSizeArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 290px;
+}
+
+.btnSize {
+  width: 85px;
+  height: 40px;
+  font-size: 15px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btnSize:hover {
+  background: #f9d1d1;
+}
+
+.btnArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnTopArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 290px;
+}
+
+.btnWishlist {
+  width: 140px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btnWishlist:hover {
+  background: #f9d1d1;
+}
+
+.btnCart {
+  width: 140px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btnCart:hover {
+  background: #f9d1d1;
+}
+
+.btnBottomArea {
+  width: 290px;
+}
+
+.btnPurchase {
+  width: 290px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btnPurchase:hover {
+  background: #f9d1d1;
+}
+
+@media (max-width: 1280px) {
+  .content {
+    max-width: 1024px;
+    padding: 50px 32px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    padding: 30px 16px 0;
+  }
+}

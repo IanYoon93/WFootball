@@ -1,5 +1,5 @@
 import { selector } from 'recoil';
-import axios from 'axios';
+// import axios from 'axios';
 // import dummy from '../data/data.json';
 
 // type DummyType = Product[];
@@ -17,15 +17,47 @@ export interface Product {
   readonly brand: string;
 }
 
-export const productsList = selector<Product[]>({
-  key: 'productsList',
+const saveData = (data: Product[]) => {
+  localStorage.setItem('productsData', JSON.stringify(data));
+};
+
+const getData = () => {
+  const data = localStorage.getItem('productsData');
+  return data ? JSON.parse(data) : [];
+};
+
+// export const productsList = selector<Product[]>({
+//   key: 'productsList',
+//   get: async () => {
+//     try {
+//       // const response = await axios.get(`${productsURL}`);
+//       // return response.data;
+
+//       const response = await fetch(productsURL as string);
+//       return (await response.json()) || [];
+//     } catch (error) {
+//       console.log(`Error: \n${error}`);
+//       return [];
+//     }
+//   },
+// });
+
+export const productsList = selector({
+  key: 'productList',
   get: async () => {
     try {
-      const response = await axios.get(`${productsURL}`);
-      return response.data;
+      const storeData = getData();
 
-      // const response = await fetch(productsURL as unknown as string);
-      // return (await response.json()) || [];
+      if (storeData.length > 0) {
+        return storeData;
+      }
+
+      const response = await fetch(productsURL);
+      const data = await response.json();
+
+      saveData(data);
+
+      return data || [];
     } catch (error) {
       console.log(`Error: \n${error}`);
       return [];

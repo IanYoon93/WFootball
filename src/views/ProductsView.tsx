@@ -1,7 +1,7 @@
 import ProductDetailed from '../components/Product/ProductDetailed';
 import styles from './ProductsView.module.css';
 
-const Products = (): JSX.Element => {
+const ProductsView = (): JSX.Element => {
   return (
     <div className={styles.main}>
       <ProductDetailed />
@@ -9,4 +9,4 @@ const Products = (): JSX.Element => {
   );
 };
 
-export default Products;
+export default ProductsView;

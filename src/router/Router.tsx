@@ -4,17 +4,17 @@ import FootballView from '../views/FootballView';
 import ShoesView from '../views/ShoesView';
 import ClothesView from '../views/ClothesView';
 import AccessoryView from '../views/AccessoryView';
-import Products from '../views/ProductsView';
+import ProductsView from '../views/ProductsView';
 
 const Router = (): JSX.Element => {
   return (
     <Routes>
       <Route path="/" element={<MainView />} />
+      <Route path="/product/:id" element={<ProductsView />} />
       <Route path="/football" element={<FootballView />} />
       <Route path="/shoes" element={<ShoesView />} />
       <Route path="/clothes" element={<ClothesView />} />
       <Route path="/accessory" element={<AccessoryView />} />
-      <Route path="/product/:id" element={<Products />} />
     </Routes>
   );
 };
