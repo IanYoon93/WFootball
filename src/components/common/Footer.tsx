@@ -2,6 +2,7 @@ import styles from './Footer.module.css';
 import { BsInstagram } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 export default function Footer() {
   const menus = [
@@ -16,7 +17,7 @@ export default function Footer() {
       <div className={styles.footerTop}>
         <h1 className={styles.company}>
           <Link to="/">
-            <img className={styles.logo} src="src/assets/logo.png" alt="더블유 풋볼 로고" />
+            <img className={styles.logo} src={logo} />
           </Link>
         </h1>
         <div className={styles.menu}>
