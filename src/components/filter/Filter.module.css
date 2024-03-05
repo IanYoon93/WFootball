@@ -1,0 +1,70 @@
+.selectArea {
+  position: relative;
+  height: 37px;
+}
+
+.btnSelect {
+  width: 134px;
+  height: 37px;
+  font-size: 16px;
+  padding: 0 16px;
+  cursor: pointer;
+  background: none;
+  text-align: start;
+  border: 1px solid #cacacb;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 15px;
+}
+
+.selectOption {
+  position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    width: 100px;
+    height: auto;
+    padding: 37px 16px 0;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #cacacb;
+    border-radius: 20px;
+    border-width: 0 1px 1px 1px;
+}
+
+.selectBox {
+  width: 100%;
+  height: 37px;
+  line-height: 37px;
+  text-align: start;
+}
+
+@media (max-width: 1024px) {
+  .selectOption {
+    width: 60px;
+    height: 30px;
+  }
+
+  .selectBox {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .selectOption {
+    width: 50px;
+  }
+
+  .selectBox {
+    font-size: 13px;
+  }
+}

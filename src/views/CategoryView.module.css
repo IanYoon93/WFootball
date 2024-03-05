@@ -47,23 +47,6 @@
   gap: 10px;
 }
 
-.selectOption {
-  display: flex;
-  align-items: center;
-  width: 80px;
-  height: 35px;
-  padding: 0 10px;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid #cacacb;
-  border-radius: 30px;
-}
-
-.selectBox {
-  width: 100%;
-  text-align: start;
-}
-
 @media (max-width: 1280px) {
   .main {
     padding: 70px 0;
@@ -79,15 +62,6 @@
   .title {
     font-size: 20px;
     line-height: 32px;
-  }
-
-  .selectOption {
-    width: 60px;
-    height: 30px;
-  }
-
-  .selectBox {
-    font-size: 14px;
   }
 }
 
@@ -112,13 +86,5 @@
 
   .contentSort {
     gap: 5px;
-  }
-
-  .selectOption {
-    width: 50px;
-  }
-
-  .selectBox {
-    font-size: 13px;
   }
 }

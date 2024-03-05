@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Product, productsList } from '../../store/products';
-// import ProductCard from '../Product/ProductCard';
+// import ProductCard from './ProductCard';
 import styles from './ProductList.module.css';
 import { useRecoilValueLoadable } from 'recoil';
 import ProductLoad from './ProductLoad';
@@ -9,6 +9,7 @@ type Items = {
   title?: string;
   limit?: number;
   data?: Array<Product>;
+  products?: Product[];
 } & typeof defaultProps;
 
 const defaultProps = {
@@ -36,7 +37,6 @@ const ProductList = ({ title, limit }: Items): JSX.Element => {
       products = products.filter((item) => item.category === '기타용품').slice(0, limit);
       break;
     default:
-      // products = products;
       break;
   }
 
