@@ -5,6 +5,7 @@ import ShoesView from '../views/ShoesView';
 import ClothesView from '../views/ClothesView';
 import AccessoryView from '../views/AccessoryView';
 import ProductsView from '../views/ProductsView';
+import LoginView from '../views/LoginView';
 
 const Router = (): JSX.Element => {
   return (
@@ -15,6 +16,7 @@ const Router = (): JSX.Element => {
       <Route path="/shoes" element={<ShoesView />} />
       <Route path="/clothes" element={<ClothesView />} />
       <Route path="/accessory" element={<AccessoryView />} />
+      <Route path="/login" element={<LoginView />} />
     </Routes>
   );
 };
