@@ -44,14 +44,23 @@ export const login = async (email: string, password: string) => {
     const response = await signInWithEmailAndPassword(auth, email, password);
     toast.success(`${response.user?.displayName || response.user?.uid}님 어서오세요.`);
     return response;
-  } catch (error: unknown) {
+  } catch (error) {
     let message;
     if (error instanceof FirebaseError) {
       switch (error.code) {
         case 'auth/invalid-credential':
           message = '입력된 정보가 올바르지 않습니다.';
           break;
-        case 'auth/invalid-password':
+        case 'auth/invalid-email':
+          message = '올바르지 않은 이메일 형식입니다.';
+          break;
+        case 'auth/user-disabled':
+          message = '이 사용자 계정이 비활성화되었습니다.';
+          break;
+        case 'auth/user-not-found':
+          message = '사용자를 찾을 수 없습니다.';
+          break;
+        case 'auth/wrong-password':
           message = '비밀번호가 일치하지 않습니다.';
           break;
         default:
@@ -59,6 +68,7 @@ export const login = async (email: string, password: string) => {
           break;
       }
       toast.error(message);
+      throw error;
     }
   }
 };
@@ -67,7 +77,7 @@ export const signInWithGoogle = async () => {
   googleProvider.setCustomParameters({ prompt: 'select_account' });
   try {
     const response = await signInWithPopup(auth, googleProvider);
-    toast.success(`${response.user?.displayName || response.user?.uid}님 반갑습니다.`);
+    toast.success(`${response?.user?.displayName || response?.user?.uid}님 반갑습니다.`);
     return response;
   } catch (error) {
     console.error(error);

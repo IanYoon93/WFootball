@@ -39,11 +39,11 @@ export default function LoginView() {
       toast.success('로그인에 성공하였습니다.');
       if (data?.user) {
         setUser(data?.user?.displayName || data.user.uid);
-        navigate('');
+        navigate('/');
       }
     } catch (error) {
       console.error(error);
-      toast.success('로그인에 실패하였습니다.');
+      toast.error('로그인에 실패하였습니다.');
     }
   };
 

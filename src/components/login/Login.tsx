@@ -6,9 +6,10 @@ interface LoginProps {
   password: string;
   onInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => Promise<void>;
+  handleClick?: () => Promise<void>;
 }
 
-export default function Login({ email, password, onInputChange, onSubmit }: LoginProps) {
+export default function Login({ email, password, onInputChange, onSubmit, handleClick }: LoginProps) {
   return (
     <div className={styles.container}>
       <form onSubmit={onSubmit}>
@@ -18,7 +19,7 @@ export default function Login({ email, password, onInputChange, onSubmit }: Logi
             <Input type="email" name="email" placeholder="이메일" value={email} required onChange={onInputChange} maxLength={30} />
             <Input type="password" name="password" placeholder="비밀번호" value={password} required onChange={onInputChange} minLength={8} maxLength={16} />
           </div>
-          <button type="submit" className={styles.btnLogin}>
+          <button type="submit" onClick={handleClick} className={styles.btnLogin}>
             로그인
           </button>
         </fieldset>
