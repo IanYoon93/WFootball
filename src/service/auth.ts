@@ -6,7 +6,7 @@ import { FirebaseError } from 'firebase/app';
 export const signUp = async (email: string, password: string) => {
   try {
     const response = await createUserWithEmailAndPassword(auth, email, password);
-    toast.success(`${response.user?.displayName || response.user?.uid}님 환영합니다!`);
+    toast.success(`${response.user?.displayName || response.user?.uid}님 가입이 완료되었습니다!`);
     return response.user;
   } catch (error: unknown) {
     let message;
@@ -20,6 +20,9 @@ export const signUp = async (email: string, password: string) => {
           break;
         case 'auth/weak-password':
           message = '비밀번호는 8글자 이상, 16글자 미만이어야 합니다.';
+          break;
+        case 'auth/wrong-password':
+          message = '비밀번호가 일치하지 않습니다.';
           break;
         case 'auth/network-request-failed':
           message = '네트워크에 연결 실패하였습니다.';

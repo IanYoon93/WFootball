@@ -38,9 +38,9 @@ const Utile = () => {
         )}
       </li>
       <li className={styles.utileItem}>
-        <a href="/" className={styles.utileLink}>
+        <Link to="/signup" className={styles.utileLink}>
           회원가입
-        </a>
+        </Link>
       </li>
       <li className={styles.utileItem}>
         <a href="/" className={styles.utileLink}>

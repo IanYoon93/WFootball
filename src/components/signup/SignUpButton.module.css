@@ -1,0 +1,12 @@
+.btnSign {
+  width: 330px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btnSign:hover {
+  background: #f9d1d1;
+}
