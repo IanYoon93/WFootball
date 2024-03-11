@@ -1,39 +1,31 @@
-import { useRecoilValueLoadable } from 'recoil';
+import { useRecoilState, useRecoilValueLoadable } from 'recoil';
 import styles from './ProductDetailed.module.css';
 import { Product, productsList } from '../../store/products';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useCallback } from 'react';
 import BreadCrumbs from '../common/BreadCrumbs';
+import { CartState, addToCart, cartState } from '../../store/cart';
+import ProductLoad from './ProductLoad';
 
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
-  const { id } = useParams();
+  const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
+  // const { id } = useParams();
+  const param = useParams();
+  const product: Product = products.filter((item) => param.id === item.id.toString())[0];
 
-  const [product, setProduct] = useState<Product | null>();
+  const [cart, setCart] = useRecoilState<CartState>(cartState);
 
-  useEffect(() => {
-    if (id && 'hasValue' === productsLoadable.state) {
-      const productId = parseInt(id);
+  const addToCartHandler = useCallback(
+    (productId: string) => {
+      setCart(addToCart(cart, productId));
+    },
+    [cart, setCart]
+  );
 
-      const loadedProduct = productsLoadable.contents.find((product: Product) => product.id === productId);
-
-      console.log(loadedProduct);
-
-      if (loadedProduct) {
-        setProduct(loadedProduct);
-      }
-    }
-  }, [productsLoadable, id]);
-
-  if (productsLoadable.state === 'loading') {
-    return <div>로딩중...</div>;
+  if ('loading' === productsLoadable.state) {
+    return <ProductLoad limit={0} />;
   }
-
-  if (!product) {
-    return <div>상품을 찾을 수 없습니다.</div>;
-  }
-
-  console.log(product.img);
 
   return (
     <section className={styles.content}>
@@ -79,7 +71,7 @@ const ProductDetailed = (): JSX.Element => {
               <button type="button" className={styles.btnWishlist}>
                 찜하기
               </button>
-              <button type="button" className={styles.btnCart}>
+              <button type="button" className={styles.btnCart} onClick={() => addToCartHandler(product.id?.toString())}>
                 장바구니
               </button>
             </div>

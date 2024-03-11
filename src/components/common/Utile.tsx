@@ -6,10 +6,13 @@ import { useEffect, useState } from 'react';
 import { auth } from '../../service/firebase';
 import { logout } from '../../service/auth';
 import { User } from 'firebase/auth';
+import { useRecoilValue } from 'recoil';
+import { cartCount } from '../../store/cart';
 
-// TODO: 로그인페이지, 회원가입페이지, 장바구니페이지, 마이페이지 각각 컴포넌트 생성해야 함
+// TODO: 장바구니페이지, 마이페이지 각각 컴포넌트 생성해야 함
 const Utile = () => {
   const [user, setUser] = useState<User | null>(null);
+  const count = useRecoilValue(cartCount);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -43,9 +46,10 @@ const Utile = () => {
         </Link>
       </li>
       <li className={styles.utileItem}>
-        <a href="/" className={styles.utileLink}>
+        <Link to="/cart" className={styles.utileLink}>
           <FiShoppingCart className={styles.icon} />
-        </a>
+          <span className={styles.cartCount}>{count}</span>
+        </Link>
       </li>
       <li className={styles.utileItem}>
         <a href="/" className={styles.utileLink}>
