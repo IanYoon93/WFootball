@@ -1,6 +1,6 @@
 // import { useRecoilValue } from 'recoil';
 import styles from './MainProduct.module.css';
-import MainProductList from '../Product/ProductList';
+import MainProductList from '../Product/MainProductList';
 // import { Product, productsAipList } from '../../store/products';
 
 const MainProduct = () => {
