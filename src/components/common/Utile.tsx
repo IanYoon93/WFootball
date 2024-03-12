@@ -9,7 +9,6 @@ import { User } from 'firebase/auth';
 import { useRecoilValue } from 'recoil';
 import { cartCount } from '../../store/cart';
 
-// TODO: 장바구니페이지, 마이페이지 각각 컴포넌트 생성해야 함
 const Utile = () => {
   const [user, setUser] = useState<User | null>(null);
   const count = useRecoilValue(cartCount);
