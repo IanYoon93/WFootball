@@ -1,0 +1,43 @@
+.btnPage {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.selected {
+  border: 1px solid #f9d1d1;
+  background: #e7aaaa;
+}
+
+.btnPage:hover {
+  border: 1px solid #f9d1d1;
+  background: #f9d1d1;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 80px;
+}
+
+.btnArrow {
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  color: #000;
+  border: 1px solid #f9d1d1;
+  background: #e7aaaa;
+}
+
+.btnArrow:disabled {
+  background: #f9d1d1;
+  color: #bbb;
+}
+
+.btnArrow:disabled:hover {
+  border: none;
+}

@@ -1,9 +1,11 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Product, productsList } from '../../store/products';
 // import ProductCard from './ProductCard';
 import styles from './ProductList.module.css';
 import { useRecoilValueLoadable } from 'recoil';
 import ProductLoad from './ProductLoad';
+import { useSearchParams } from 'react-router-dom';
+import Pagination from '../pagination/Pagination';
 
 type Items = {
   title?: string;
@@ -22,6 +24,16 @@ const ProductList = ({ title, limit }: Items): JSX.Element => {
   const ProductCard = React.lazy(() => import('./ProductCard'));
   const ProductsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   let products: Product[] = 'hasValue' === ProductsLoadable.state ? ProductsLoadable.contents : [];
+
+  const maxPage = 10;
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const page = parseInt(searchParams.get('page') ?? '1', 10);
+  // const state = searchParams.get('state');
+
+  useEffect(() => {
+    searchParams;
+  }, [searchParams]);
 
   switch (title) {
     case '축구화/풋살화':
@@ -47,6 +59,15 @@ const ProductList = ({ title, limit }: Items): JSX.Element => {
         <Suspense fallback={<ProductLoad limit={limit} />}>
           <ProductCard products={products} limit={limit} />
         </Suspense>
+      </div>
+      <div className={styles.paginationContainer}>
+        <Pagination
+          currentPage={page}
+          maxPage={maxPage}
+          onClick={(pageNumber) => {
+            setSearchParams({ page: pageNumber.toString() });
+          }}
+        />
       </div>
     </>
   );
