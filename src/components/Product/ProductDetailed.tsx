@@ -6,21 +6,29 @@ import { useCallback } from 'react';
 import BreadCrumbs from '../common/BreadCrumbs';
 import { CartState, addToCart, cartState } from '../../store/cart';
 import ProductLoad from './ProductLoad';
+import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
-  // const { id } = useParams();
   const param = useParams();
   const product: Product = products.filter((item) => param.id === item.id.toString())[0];
 
   const [cart, setCart] = useRecoilState<CartState>(cartState);
+  const [wishlist, setWishlist] = useRecoilState<WishlistState>(wishlistState);
 
   const addToCartHandler = useCallback(
     (productId: string) => {
       setCart(addToCart(cart, productId));
     },
     [cart, setCart]
+  );
+
+  const addToWishlistHandler = useCallback(
+    (productId: string) => {
+      setWishlist(addToWishList(wishlist, productId));
+    },
+    [wishlist, setWishlist]
   );
 
   if ('loading' === productsLoadable.state) {
@@ -68,7 +76,7 @@ const ProductDetailed = (): JSX.Element => {
           </div>
           <div className={styles.btnArea}>
             <div className={styles.btnTopArea}>
-              <button type="button" className={styles.btnWishlist}>
+              <button type="button" className={styles.btnWishlist} onClick={() => addToWishlistHandler(product.id?.toString())}>
                 찜하기
               </button>
               <button type="button" className={styles.btnCart} onClick={() => addToCartHandler(product.id?.toString())}>

@@ -8,6 +8,7 @@ import ProductsView from '../views/ProductsView';
 import LoginView from '../views/LoginView';
 import SignUpView from '../views/SignUpView';
 import CartView from '../views/CartView';
+import WishListView from '../views/WishListView';
 
 const Router = (): JSX.Element => {
   return (
@@ -21,6 +22,7 @@ const Router = (): JSX.Element => {
       <Route path="/login" element={<LoginView />} />
       <Route path="/signup" element={<SignUpView />} />
       <Route path="/cart" element={<CartView />} />
+      <Route path="/wishlist" element={<WishListView />} />
     </Routes>
   );
 };

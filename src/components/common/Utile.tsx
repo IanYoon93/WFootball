@@ -1,6 +1,6 @@
 import styles from './Utile.module.css';
 import { FiShoppingCart } from 'react-icons/fi';
-import icon from '../../assets/account.svg';
+import { FaRegHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { auth } from '../../service/firebase';
@@ -52,9 +52,9 @@ const Utile = () => {
         </Link>
       </li>
       <li className={styles.utileItem}>
-        <a href="/" className={styles.utileLink}>
-          <img src={icon} alt="마이페이지" className={styles.icon} />
-        </a>
+        <Link to="/wishlist" className={styles.utileLink}>
+          <FaRegHeart className={styles.icon} />
+        </Link>
       </li>
     </ul>
   );
