@@ -41,20 +41,37 @@ const Utile = () => {
         )}
       </li>
       <li className={styles.utileItem}>
-        <Link to="/signup" className={styles.utileLink}>
-          회원가입
-        </Link>
+        {user ? (
+          <div className={styles.utileLink}>회원가입</div>
+        ) : (
+          <Link to="/signup" className={styles.utileLink}>
+            회원가입
+          </Link>
+        )}
       </li>
       <li className={styles.utileItem}>
-        <Link to="/cart" className={styles.utileLink}>
-          <FiShoppingCart className={styles.icon} />
-          <span className={styles.cartCount}>{count}</span>
-        </Link>
+        {user ? (
+          <Link to="/cart" className={styles.utileLink}>
+            <FiShoppingCart className={styles.icon} />
+            <span className={styles.cartCount}>{count}</span>
+          </Link>
+        ) : (
+          <Link to="/login" className={styles.utileLink}>
+            <FiShoppingCart className={styles.icon} />
+            <span className={styles.cartCount}>{count}</span>
+          </Link>
+        )}
       </li>
       <li className={styles.utileItem}>
-        <Link to="/wishlist" className={styles.utileLink}>
-          <FaRegHeart className={styles.icon} />
-        </Link>
+        {user ? (
+          <Link to="/wishlist" className={styles.utileLink}>
+            <FaRegHeart className={styles.icon} />
+          </Link>
+        ) : (
+          <Link to="/login" className={styles.utileLink}>
+            <FaRegHeart className={styles.icon} />
+          </Link>
+        )}
       </li>
     </ul>
   );
