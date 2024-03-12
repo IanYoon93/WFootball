@@ -3,6 +3,7 @@ import styles from './Cart.module.css';
 import { CartItems, cartList, cartTotal } from '../../store/cart';
 import { Link } from 'react-router-dom';
 import CartList from './CartList';
+import Modal from '../common/Modal';
 
 const Cart = (): JSX.Element => {
   const cartLoadable = useRecoilValueLoadable<CartItems[]>(cartList);
@@ -36,6 +37,7 @@ const Cart = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <Modal />
     </>
   );
 };

@@ -46,6 +46,11 @@
   border: 1px solid #f9d1d1;
   border-radius: 8px;
   background: #f9d1d1;
+  cursor: pointer;
+}
+
+.btnModal:hover {
+  background: #e7aaaa;
 }
 
 /* CartList.tsx */
@@ -78,7 +83,6 @@
   flex-direction: column;
   gap: 15px;
   padding: 32px 48px;
-  border: 1px solid #fff;
 }
 
 .itemTitle {

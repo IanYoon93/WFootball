@@ -1,0 +1,93 @@
+.modalInput {
+  position: fixed;
+  height: 0px;
+  width: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+}
+
+.modalInput:checked+.modal {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modalBox {
+  width: 464px;
+  height: 156px;
+  padding: 24px;
+  border: 1px solid #434040;
+  border-radius: 20px;
+  background: #202124;
+}
+
+.buyTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.delete {
+  color: #fff;
+  padding: 16px 0;
+}
+
+.modalAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #f9d1d1;
+  border-radius: 8px;
+  background: #f9d1d1;
+  cursor: pointer;
+}
+
+.btnNo {
+  display: block;
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #434040;
+  border-radius: 8px;
+  background: #434040;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e7aaaa;
+}
+
+.btnNo:hover {
+  background: #e7aaaa;
+  color: #000;
+}
