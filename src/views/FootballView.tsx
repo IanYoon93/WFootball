@@ -36,7 +36,7 @@ const FootballView = (): JSX.Element => {
           </div>
         </div>
         <div>
-          <ProductList title="축구화/풋살화" limit={40} products={allProducts} />
+          <ProductList title="축구화/풋살화" limit={12} products={allProducts} />
         </div>
       </section>
     </div>

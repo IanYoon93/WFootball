@@ -1,6 +1,6 @@
 import styles from './ProductCard.module.css';
 // import dummy from '../../data/data.json';
-import type { Product } from '../../store/products';
+import { Product } from '../../store/products';
 import ProductLoad from './ProductLoad';
 import { Link } from 'react-router-dom';
 

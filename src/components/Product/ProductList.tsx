@@ -1,5 +1,5 @@
-import React, { Suspense, useEffect } from 'react';
-import { Product, productsList } from '../../store/products';
+import React, { Suspense, useEffect, useState } from 'react';
+import { Product, productsList, productsURL } from '../../store/products';
 // import ProductCard from './ProductCard';
 import styles from './ProductList.module.css';
 import { useRecoilValueLoadable } from 'recoil';
@@ -16,7 +16,7 @@ type Items = {
 
 const defaultProps = {
   title: '',
-  limit: 4,
+  limit: 12,
   data: [],
 };
 
@@ -25,28 +25,37 @@ const ProductList = ({ title, limit }: Items): JSX.Element => {
   const ProductsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   let products: Product[] = 'hasValue' === ProductsLoadable.state ? ProductsLoadable.contents : [];
 
-  const maxPage = 10;
+  const [posts, setPosts] = useState([]);
+  console.log(posts);
+  const [pages, setPage] = useState(1);
+  const offset = (pages - 1) * limit;
 
   const [searchParams, setSearchParams] = useSearchParams();
-  const page = parseInt(searchParams.get('page') ?? '1', 10);
+  const page = parseInt(searchParams.get('page') ?? '1', offset);
   // const state = searchParams.get('state');
 
   useEffect(() => {
     searchParams;
   }, [searchParams]);
 
+  useEffect(() => {
+    fetch(`${productsURL}?page=${page}`)
+      .then((res) => res.json())
+      .then((data) => setPosts(data));
+  }, [page]);
+
   switch (title) {
     case '축구화/풋살화':
-      products = products.filter((item) => item.category === '축구화' || item.category === '풋살화').slice(0, limit);
+      products = products.filter((item) => item.category === '축구화' || item.category === '풋살화');
       break;
     case '런닝화/트레이닝화':
-      products = products.filter((item) => item.category === '런닝화' || item.category === '트레이닝화').slice(0, limit);
+      products = products.filter((item) => item.category === '런닝화' || item.category === '트레이닝화');
       break;
     case '의류':
-      products = products.filter((item) => item.category === '상의' || item.category === '하의').slice(0, limit);
+      products = products.filter((item) => item.category === '상의' || item.category === '하의');
       break;
     case '기타용품':
-      products = products.filter((item) => item.category === '기타용품').slice(0, limit);
+      products = products.filter((item) => item.category === '기타용품');
       break;
     default:
       break;
@@ -62,8 +71,11 @@ const ProductList = ({ title, limit }: Items): JSX.Element => {
       </div>
       <div className={styles.paginationContainer}>
         <Pagination
+          maxPage={products.length}
+          limit={limit}
           currentPage={page}
-          maxPage={maxPage}
+          page={page}
+          setPage={setPage}
           onClick={(pageNumber) => {
             setSearchParams({ page: pageNumber.toString() });
           }}

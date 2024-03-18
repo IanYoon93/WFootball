@@ -19,20 +19,25 @@ function PageButton({ number, onClick, selected }: PageButtonProps) {
 }
 
 interface PaginationProps extends OnClickProps {
-  maxPage: number;
   currentPage: number;
+  limit: number;
+  page: number;
+  setPage?: (page: number) => void;
+  maxPage: number;
 }
 
-export default function Pagination({ currentPage, maxPage, onClick }: PaginationProps) {
+export default function Pagination({ currentPage, maxPage, limit, onClick }: PaginationProps) {
+  const numPages = Math.ceil(maxPage / limit);
+
   return (
     <div className={styles.pagination}>
-      <button type="button" className={styles.btnArrow} disabled={currentPage === 1}>
+      <button type="button" className={styles.btnArrow} onClick={() => onClick(currentPage - 1)} disabled={currentPage === 1}>
         {'< prev'}
       </button>
-      {new Array(maxPage).fill(null).map((_, i) => (
+      {new Array(numPages).fill(null).map((_, i) => (
         <PageButton key={i + 1} onClick={onClick} selected={i + 1 === currentPage} number={i + 1} />
       ))}
-      <button type="button" className={styles.btnArrow} disabled={currentPage === maxPage}>
+      <button type="button" className={styles.btnArrow} onClick={() => onClick(currentPage + 1)} disabled={currentPage === numPages}>
         {'next >'}
       </button>
     </div>
