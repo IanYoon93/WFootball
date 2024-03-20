@@ -2,17 +2,12 @@ import styles from './CategoryView.module.css';
 import ProductList from '../components/Product/ProductList';
 import BreadCrumbs from '../components/common/BreadCrumbs';
 import Filter from '../components/filter/Filter';
-import { useMemo, useState } from 'react';
-import { useRecoilValueLoadable } from 'recoil';
-import { Product, productsList } from '../store/products';
+import { useState } from 'react';
 // import ProductCard from '../components/Product/ProductCard';
 
-// TODO: 필러링 버튼 클릭시 해당하는 리스트 필터링해서 불러오기
 const ShoesView = (): JSX.Element => {
-  const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
-  const allProducts: Product[] = useMemo(() => ('hasValue' === productsLoadable.state ? productsLoadable.contents : []), [productsLoadable.state, productsLoadable.contents]);
   const categories = ['런닝화', '트레이닝화'];
-  const brands = ['나이키', '아디다스'];
+  const brands = ['Nike', 'Adidas'];
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
 
@@ -36,7 +31,7 @@ const ShoesView = (): JSX.Element => {
           </div>
         </div>
         <div>
-          <ProductList title="런닝화/트레이닝화" limit={40} products={allProducts} />
+          <ProductList title="런닝화/트레이닝화" limit={12} selectedCategory={selectedCategory} selectedBrand={selectedBrand} />
         </div>
       </section>
     </div>

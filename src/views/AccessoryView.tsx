@@ -2,17 +2,12 @@ import styles from './CategoryView.module.css';
 import ProductList from '../components/Product/ProductList';
 import BreadCrumbs from '../components/common/BreadCrumbs';
 import Filter from '../components/filter/Filter';
-import { useMemo, useState } from 'react';
-import { useRecoilValueLoadable } from 'recoil';
-import { Product, productsList } from '../store/products';
+import { useState } from 'react';
 // import ProductCard from '../components/Product/ProductCard';
 
-// TODO: 필러링 버튼 클릭시 해당하는 리스트 필터링해서 불러오기
 const AccessoryView = (): JSX.Element => {
-  const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
-  const allProducts: Product[] = useMemo(() => ('hasValue' === productsLoadable.state ? productsLoadable.contents : []), [productsLoadable.state, productsLoadable.contents]);
   const categories = ['기타용품'];
-  const brands = ['나이키', '아디다스'];
+  const brands = ['Nike', 'Adidas'];
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
 
@@ -31,13 +26,12 @@ const AccessoryView = (): JSX.Element => {
         <div className={styles.contentHeader}>
           <h2 className={styles.title}>전체</h2>
           <div className={styles.contentSort}>
-            {/* <Filter title="종류" options={['전체', ...categories]} selectedOption={selectedCategory} onOptionChange={handleCategoryChange} /> */}
             <Filter title="종류" options={['전체', ...categories]} selectedOption={selectedCategory} onOptionChange={handleCategoryChange} />
             <Filter title="브랜드" options={['전체', ...brands]} selectedOption={selectedBrand} onOptionChange={handleBrandChange} />
           </div>
         </div>
         <div>
-          <ProductList title="기타용품" limit={40} products={allProducts} />
+          <ProductList title="기타용품" limit={12} selectedCategory={selectedCategory} selectedBrand={selectedBrand} />
         </div>
       </section>
     </div>
