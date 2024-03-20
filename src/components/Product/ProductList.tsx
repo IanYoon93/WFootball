@@ -22,6 +22,7 @@ const ProductList = ({ title, limit, selectedCategory, selectedBrand }: Items): 
   const { state, contents: allProducts } = useRecoilValueLoadable<Product[]>(productsList);
   const [products, setProducts] = useState<Product[]>([]);
   const [pages, setPage] = useState(1);
+  const [totalPageCount, setTotalPageCount] = useState(1);
   const offset = (pages - 1) * limit;
   const [searchParams, setSearchParams] = useSearchParams();
   const page = parseInt(searchParams.get('page') ?? '1', offset);
@@ -56,11 +57,21 @@ const ProductList = ({ title, limit, selectedCategory, selectedBrand }: Items): 
         filteredProducts = filteredProducts.filter((product) => product.brand === selectedBrand);
       }
 
+      // 필터링된 데이터 수를 기준으로 페이지 수 계산
+      const totalPageCount = Math.ceil(filteredProducts.length / limit);
+
       // 페이지에 해당하는 제품만 추출
       const startIndex = (page - 1) * limit;
       const endIndex = startIndex + limit;
       const currentPageProducts = filteredProducts.slice(startIndex, endIndex);
       setProducts(currentPageProducts);
+
+      //페이지 업데이트
+      setPage(page);
+
+      // 필터링된 데이터의 페이지 수 업데이트
+      setTotalPageCount(totalPageCount);
+      console.log(filteredProducts);
     }
   }, [title, selectedCategory, selectedBrand, allProducts, state, limit, offset, page]);
 
@@ -86,7 +97,7 @@ const ProductList = ({ title, limit, selectedCategory, selectedBrand }: Items): 
       </div>
       <div className={styles.paginationContainer}>
         <Pagination
-          maxPage={products.length}
+          totalPageCount={totalPageCount}
           limit={limit}
           currentPage={page}
           page={page}

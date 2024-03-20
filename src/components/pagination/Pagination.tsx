@@ -10,7 +10,7 @@ interface PageButtonProps extends OnClickProps {
   selected: boolean;
 }
 
-function PageButton({ number, onClick, selected }: PageButtonProps) {
+function PageButton({ number, onClick, selected }: PageButtonProps): JSX.Element {
   return (
     <button type="button" className={cx(styles.btnPage, { [styles.selected]: selected })} onClick={() => onClick(number)}>
       {number}
@@ -21,23 +21,21 @@ function PageButton({ number, onClick, selected }: PageButtonProps) {
 interface PaginationProps extends OnClickProps {
   currentPage: number;
   limit: number;
-  page: number;
+  page?: number;
   setPage?: (page: number) => void;
-  maxPage: number;
+  totalPageCount: number;
 }
 
-export default function Pagination({ currentPage, maxPage, limit, onClick }: PaginationProps) {
-  const numPages = Math.ceil(maxPage / limit);
-
+export default function Pagination({ currentPage, totalPageCount, onClick }: PaginationProps) {
   return (
     <div className={styles.pagination}>
       <button type="button" className={styles.btnArrow} onClick={() => onClick(currentPage - 1)} disabled={currentPage === 1}>
         {'< prev'}
       </button>
-      {new Array(numPages).fill(null).map((_, i) => (
+      {Array.from({ length: totalPageCount }).map((_, i) => (
         <PageButton key={i + 1} onClick={onClick} selected={i + 1 === currentPage} number={i + 1} />
       ))}
-      <button type="button" className={styles.btnArrow} onClick={() => onClick(currentPage + 1)} disabled={currentPage === numPages}>
+      <button type="button" className={styles.btnArrow} onClick={() => onClick(currentPage + 1)} disabled={currentPage === totalPageCount}>
         {'next >'}
       </button>
     </div>
