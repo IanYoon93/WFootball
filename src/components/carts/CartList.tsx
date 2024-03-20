@@ -25,14 +25,14 @@ const CartList = ({ data }: Item): JSX.Element => {
 
   return (
     <div className={styles.cartList}>
-      <Link to={`/product/${data.id}`}>
+      <Link to={`/${data.id}`}>
         <figure className={styles.figure}>
           <img src={data.image} alt={data.title} className={styles.cartItemImg} />
         </figure>
       </Link>
       <div className={styles.cartItemInfo}>
         <h3 className={styles.itemTitle}>
-          <Link to={`/product/${data.id}`} className={styles.Link}>
+          <Link to={`/${data.id}`} className={styles.Link}>
             {data.title}
           </Link>
         </h3>
