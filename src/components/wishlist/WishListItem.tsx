@@ -11,6 +11,7 @@ const defaultProps = {
   data: {},
 };
 
+// TODO: 제품 이미지 엑박 해결(경로 확인)
 const WishListItem = ({ data }: Item): JSX.Element => {
   const [wishlist, setWishlist] = useRecoilState<WishlistState>(wishlistState);
 

@@ -10,6 +10,7 @@ interface FilterProps {
   onOptionChange: (option: string) => void;
 }
 
+// TODO: 필터 버튼 컴포넌트 분리하기
 const Filter = ({ title, options, selectedOption, onOptionChange }: FilterProps): JSX.Element => {
   const [openOptions, setOpenOptions] = useState(false);
   const [toggle, setToggle] = useState<boolean>(false);

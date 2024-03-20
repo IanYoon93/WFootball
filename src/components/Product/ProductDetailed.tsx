@@ -8,6 +8,7 @@ import { CartState, addToCart, cartState } from '../../store/cart';
 import ProductLoad from './ProductLoad';
 import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
+// TODO: 별점 기능 추가, 사이즈 선택 기능 추가, 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
