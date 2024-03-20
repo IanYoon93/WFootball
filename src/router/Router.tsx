@@ -14,7 +14,7 @@ const Router = (): JSX.Element => {
   return (
     <Routes>
       <Route path="/" element={<MainView />} />
-      <Route path="/product/:id" element={<ProductsView />} />
+      <Route path="/:id" element={<ProductsView />} />
       <Route path="/football" element={<FootballView />} />
       <Route path="/shoes" element={<ShoesView />} />
       <Route path="/clothes" element={<ClothesView />} />

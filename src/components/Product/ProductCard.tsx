@@ -13,7 +13,7 @@ const ProductCard = ({ products, limit }: { products: Product[]; limit: number }
     <>
       {products.slice(offset, offset + limit).map((product: Product) => (
         <div className={styles.productCard} key={product.id}>
-          <Link to={`/product/${product.id}`} className={styles.productCard} key={product.id}>
+          <Link to={`/${product.id}`} className={styles.productCard} key={product.id}>
             <img className={styles.productImg} key={product.id} src={product.img} alt="상품 이미지" />
             <div className={styles.productInfo}>
               <p className={styles.title}>{product.title}</p>

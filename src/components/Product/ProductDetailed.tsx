@@ -38,8 +38,8 @@ const ProductDetailed = (): JSX.Element => {
   return (
     <section className={styles.content}>
       <BreadCrumbs category={product.category} crumb={product.title} />
-      <div className={styles.productDetail} key={product.id}>
-        <img className={styles.productImg} src={product.img} alt="제품 이미지" onLoad={() => console.log('이미지 로드됨')} onError={() => console.log('이미지 로드 실패')} />
+      <div className={styles.productDetail}>
+        <img className={styles.productImg} src={product.img} alt={product.title} />
         <div className={styles.productInfo}>
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
