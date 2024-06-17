@@ -2,9 +2,9 @@ import { useRecoilState, useRecoilValueLoadable } from 'recoil';
 import styles from './ProductDetailed.module.css';
 import { Product, productsList } from '../../store/products';
 import { useParams } from 'react-router-dom';
-import { useCallback } from 'react';
+import { ReactHTMLElement, useCallback, useState } from 'react';
 import BreadCrumbs from '../common/BreadCrumbs';
-import { CartState, addToCart, cartState } from '../../store/cart';
+import { CartItems, CartState, addToCart, cartState, removeFromCart } from '../../store/cart';
 import ProductLoad from './ProductLoad';
 import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
@@ -17,6 +17,7 @@ const ProductDetailed = (): JSX.Element => {
 
   const [cart, setCart] = useRecoilState<CartState>(cartState);
   const [wishlist, setWishlist] = useRecoilState<WishlistState>(wishlistState);
+  const [selectedSize, setSelectedSize] = useState<string>('');
 
   const addToCartHandler = useCallback(
     (productId: string) => {
@@ -36,6 +37,11 @@ const ProductDetailed = (): JSX.Element => {
     return <ProductLoad limit={0} />;
   }
 
+  // 사이즈 선택 기능
+  const handelChangeSize = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setSelectedSize(e.currentTarget.value);
+  };
+
   return (
     <section className={styles.content}>
       <BreadCrumbs category={product.category} crumb={product.title} />
@@ -49,32 +55,27 @@ const ProductDetailed = (): JSX.Element => {
           <div className={styles.sizeArea}>
             <strong>사이즈 선택</strong>
             <div className={styles.btnSizeArea}>
-              <button type="button" className={styles.btnSize}>
-                220
-              </button>
-              <button type="button" className={styles.btnSize}>
-                225
-              </button>
-              <button type="button" className={styles.btnSize}>
-                230
-              </button>
-              <button type="button" className={styles.btnSize}>
-                235
-              </button>
-              <button type="button" className={styles.btnSize}>
-                240
-              </button>
-              <button type="button" className={styles.btnSize}>
-                245
-              </button>
-              <button type="button" className={styles.btnSize}>
-                250
-              </button>
-              <button type="button" className={styles.btnSize}>
-                255
-              </button>
+              {['220', '225', '230', '235', '240', '245', '250', '255'].map((size) => (
+                <button key={size} type="button" value={size} className={`${styles.btnSize} ${selectedSize === size ? styles.selected : ''}`} onClick={handelChangeSize}>
+                  {size}
+                </button>
+              ))}
             </div>
           </div>
+          {selectedSize && (
+            <div className={styles.selectedSize}>
+              <p>선택한 사이즈: {selectedSize}</p>
+              <div className={styles.btnGroup}>
+                <button type="button" className={styles.btn}>
+                  -
+                </button>
+                <span className={styles.count}>1</span>
+                <button type="button" className={styles.btn}>
+                  +
+                </button>
+              </div>
+            </div>
+          )}
           <div className={styles.btnArea}>
             <div className={styles.btnTopArea}>
               <button type="button" className={styles.btnWishlist} onClick={() => addToWishlistHandler(product.id?.toString())}>

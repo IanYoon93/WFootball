@@ -87,6 +87,51 @@
   gap: 10px;
 }
 
+.selected {
+  background: #f9d1d1;
+}
+
+.selectedSize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 290px;
+  border: 1px solid #fff;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 35px;
+  margin: 10px 0;
+}
+
+.btn {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #f9d1d1;
+}
+
+.count {
+  display: block;
+  width: 30px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 15px;
+  background: transparent;
+  color: #fff;
+}
+
 .btnTopArea {
   display: flex;
   flex-wrap: wrap;
