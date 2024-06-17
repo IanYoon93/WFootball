@@ -72,7 +72,7 @@ export const cartList = selector<CartItems[]>({
   },
 });
 
-export const addToCart = (cart: CartState, id: string) => {
+export const addToCart = (cart: CartState, id: string, quantity: number) => {
   if (!cartState[id]) {
     cartState[id] = {
       id,
@@ -82,12 +82,12 @@ export const addToCart = (cart: CartState, id: string) => {
       ...cart,
       [id]: {
         id,
-        count: 1,
+        count: quantity,
       },
     };
   }
   cartState[id].count++;
-  return { ...cart, [id]: { id: id, count: cartState[id].count } };
+  return { ...cart, [id]: { id: id, count: cartState[id].count + quantity } };
 };
 
 export const removeFromCart = (cart: CartState, id: string) => {

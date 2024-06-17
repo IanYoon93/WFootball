@@ -8,7 +8,7 @@ import { CartItems, CartState, addToCart, cartState, removeFromCart } from '../.
 import ProductLoad from './ProductLoad';
 import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
-// TODO: 별점 기능 추가, 사이즈 선택 기능 추가, 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
+// TODO: 별점 기능 추가, 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
@@ -18,10 +18,11 @@ const ProductDetailed = (): JSX.Element => {
   const [cart, setCart] = useRecoilState<CartState>(cartState);
   const [wishlist, setWishlist] = useRecoilState<WishlistState>(wishlistState);
   const [selectedSize, setSelectedSize] = useState<string>('');
+  const [quantity, setQuantity] = useState<number>(1);
 
   const addToCartHandler = useCallback(
-    (productId: string) => {
-      setCart(addToCart(cart, productId));
+    (productId: string, quantity: number) => {
+      setCart(addToCart(cart, productId, quantity));
     },
     [cart, setCart]
   );
@@ -42,6 +43,16 @@ const ProductDetailed = (): JSX.Element => {
     setSelectedSize(e.currentTarget.value);
   };
 
+  // 수량 증가
+  const increaseQuantity = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  // 수량 감소
+  const decreaseQuantity = () => {
+    setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  };
+
   return (
     <section className={styles.content}>
       <BreadCrumbs category={product.category} crumb={product.title} />
@@ -51,7 +62,6 @@ const ProductDetailed = (): JSX.Element => {
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
           <div className={styles.rating}>별점/ 5</div>
-          {/* <div className={styles.total}>{product.price}원 / 1(수량)</div> */}
           <div className={styles.sizeArea}>
             <strong>사이즈 선택</strong>
             <div className={styles.btnSizeArea}>
@@ -64,16 +74,17 @@ const ProductDetailed = (): JSX.Element => {
           </div>
           {selectedSize && (
             <div className={styles.selectedSize}>
-              <p>선택한 사이즈: {selectedSize}</p>
+              <p>{selectedSize}</p>
               <div className={styles.btnGroup}>
-                <button type="button" className={styles.btn}>
+                <button type="button" className={styles.btn} onClick={decreaseQuantity}>
                   -
                 </button>
-                <span className={styles.count}>1</span>
-                <button type="button" className={styles.btn}>
+                <div className={styles.count}>{quantity}</div>
+                <button type="button" className={styles.btn} onClick={increaseQuantity}>
                   +
                 </button>
               </div>
+              <div className={styles.total}>{product.price * quantity}원</div>
             </div>
           )}
           <div className={styles.btnArea}>
@@ -81,7 +92,7 @@ const ProductDetailed = (): JSX.Element => {
               <button type="button" className={styles.btnWishlist} onClick={() => addToWishlistHandler(product.id?.toString())}>
                 찜하기
               </button>
-              <button type="button" className={styles.btnCart} onClick={() => addToCartHandler(product.id?.toString())}>
+              <button type="button" className={styles.btnCart} onClick={() => addToCartHandler(product.id?.toString(), quantity)}>
                 장바구니
               </button>
             </div>
