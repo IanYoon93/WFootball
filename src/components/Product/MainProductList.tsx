@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Product, productsList } from '../../store/products';
-// import ProductCard from './ProductCard';
+import ProductCard from './ProductCard';
 import styles from './ProductList.module.css';
 import { useRecoilValueLoadable } from 'recoil';
 import ProductLoad from './ProductLoad';
