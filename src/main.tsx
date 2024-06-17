@@ -1,8 +1,9 @@
 import React from 'react';
-import App from './App.tsx';
+// import App from './App.tsx';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RecoilRoot } from 'recoil';
+import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
