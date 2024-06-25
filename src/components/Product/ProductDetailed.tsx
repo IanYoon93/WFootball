@@ -2,13 +2,13 @@ import { useRecoilState, useRecoilValueLoadable } from 'recoil';
 import styles from './ProductDetailed.module.css';
 import { Product, productsList } from '../../store/products';
 import { useParams } from 'react-router-dom';
-import { ReactHTMLElement, useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import BreadCrumbs from '../common/BreadCrumbs';
-import { CartItems, CartState, addToCart, cartState, removeFromCart } from '../../store/cart';
+import { CartState, addToCart, cartState, removeFromCart } from '../../store/cart';
 import ProductLoad from './ProductLoad';
 import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
-// TODO: 별점 기능 추가, 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
+// TODO: 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
@@ -61,7 +61,6 @@ const ProductDetailed = (): JSX.Element => {
         <div className={styles.productInfo}>
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
-          <div className={styles.rating}>별점/ 5</div>
           <div className={styles.sizeArea}>
             <strong>사이즈 선택</strong>
             <div className={styles.btnSizeArea}>
