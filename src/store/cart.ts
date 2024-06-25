@@ -63,7 +63,7 @@ export const cartList = selector<CartItems[]>({
       const items = cartItems[id];
       return {
         id: items.id,
-        image: products[items.id - 1].image,
+        image: products[items.id - 1].img,
         title: products[items.id - 1].title,
         count: items.count,
         price: items.count * products[items.id - 1].price,
