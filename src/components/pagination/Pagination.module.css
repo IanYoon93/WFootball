@@ -41,3 +41,9 @@
 .btnArrow:disabled:hover {
   border: none;
 }
+
+@media (max-width: 768px) {
+  .btnArrow  {
+    font-size: 12px;
+  }
+}

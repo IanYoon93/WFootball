@@ -53,22 +53,20 @@
 }
 
 @media (max-width: 1024px) {
+  .btnSelect {
+    width: 94px;
+  }
+
+  .icon {
+    right: 0;
+  }
+
   .selectOption {
     width: 60px;
-    height: 30px;
+    height: auto;
   }
 
   .selectBox {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .selectOption {
-    width: 50px;
-  }
-
-  .selectBox {
-    font-size: 13px;
   }
 }
