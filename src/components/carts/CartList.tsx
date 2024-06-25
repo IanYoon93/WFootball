@@ -11,7 +11,7 @@ const defaultProps = {
   data: {},
 };
 
-// TODO: 상품별 체크 박스 추가 후 화면 아래에 전체 선택, 선택 해제 기능 추가. 이미지 엑박으로 뜨는거 해결
+// TODO: 상품별 체크 박스 추가 후 화면 아래에 전체 선택, 선택 해제 기능 추가.
 const CartList = ({ data }: Item): JSX.Element => {
   const [cart, setCart] = useRecoilState<CartState>(cartState);
 
