@@ -36,7 +36,7 @@
 }
 
 .icon {
-  width: 25px;
+  width: 30px;
   height: 25px;
 }
 
@@ -108,7 +108,7 @@
     width: 25px;
     height: 25px;
     background: transparent;
-    padding: 0 8px;
+    padding: 0;
   }
 
   .searchInput {
@@ -116,9 +116,9 @@
   }
 
   .btnSearch {
-    width: 25px;
+    width: 30px;
     height: 25px;
     color: #fff;
-    padding: 0 8px;
+    padding: 0;
   }
 }
