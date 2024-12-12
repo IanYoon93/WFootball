@@ -53,22 +53,16 @@
 
 @media (max-width: 1280px) {
   .utileItem {
-    padding: 0 8px;
+    padding: 0 4px;
   }
 
-  .utileLink {
-    font-size: 16px;
+  .utileLink, .btnLogout {
+    font-size: 14px;
   }
 
   .icon {
     width: 30px;
     height: 20px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .utileLink {
-    font-size: 14px;
   }
 }
 
