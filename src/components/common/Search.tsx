@@ -80,6 +80,8 @@ const Search = () => {
   }, [focusedIndex]);
 
   const toggleSearch = () => {
+    inputRef?.current?.classList.toggle('.searchInput');
+    listRef?.current?.classList.toggle('.dropdown');
     inputRef?.current?.classList.toggle('.searchedItem');
     inputRef?.current?.blur();
     setSearch('');
