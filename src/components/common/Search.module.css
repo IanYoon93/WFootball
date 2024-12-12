@@ -53,6 +53,11 @@
   opacity: 0;
 }
 
+.dropdown:focus {
+  visibility: visible;
+  opacity: 1;
+}
+
 .dropdown > li {
   position: relative;
   display: flex;
@@ -74,6 +79,9 @@
   border-bottom: 1px solid #434040;
   border-width: 0 0 1px 0;
   cursor: pointer;
+}
+.searchedItem:hover, .searchedItem:focus {
+  background: #ddd;
 }
 
 .title {
