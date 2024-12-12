@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 import styles from './Header.module.css';
@@ -6,14 +5,15 @@ import Nav from './Nav';
 import Search from './Search';
 import Utile from './Utile';
 import logo from '../../assets/logo.png';
+import { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = (): JSX.Element => {
-  // TODO: 햄버거 메뉴 구현 중이었음. 이거 먼저 해야함
-  // const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const handelHamburgerClick = () => {
-  //   setIsHamburgerOpen(!isHamburgerOpen);
-  // }
+  const toggleHamburger = () => {
+    setIsOpen(true);
+  };
 
   return (
     <div className={styles.header}>

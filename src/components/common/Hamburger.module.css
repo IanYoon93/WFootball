@@ -2,18 +2,42 @@
   display: none;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  height: 60px;
+.bg {
+  width: 100%;
+  background: #242529;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  opacity: 0.4;
+  cursor: pointer;
 }
 
-.menuItem {
-  padding: 0 16px;
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+  background: #242529;
+  z-index: 10;
+}
+.menu li {
+  width: 80%;
 }
 
 .menuLink {
-  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
@@ -21,15 +45,11 @@
 @media (max-width: 1024px) {
   .hamburgerMenu {
     display: block;
-    padding-left: 8px;
   }
-
-  .menu {
-    display: none;
-  }
-
   .btnMenu {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
+    cursor: pointer;
+    margin-top: 4px;
   }
 }
