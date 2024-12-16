@@ -5,16 +5,8 @@ import Nav from './Nav';
 import Search from './Search';
 import Utile from './Utile';
 import logo from '../../assets/logo.png';
-import { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleHamburger = () => {
-    setIsOpen(true);
-  };
-
   return (
     <div className={styles.header}>
       <h1 className={styles.title}>
