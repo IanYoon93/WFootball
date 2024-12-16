@@ -10,3 +10,9 @@
 .btnSign:hover {
   background: #f9d1d1;
 }
+
+@media (max-width: 768px) {
+  .btnSign {
+    width: 220px;
+  }
+}

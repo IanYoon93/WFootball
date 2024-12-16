@@ -85,3 +85,28 @@ input[type="password"] {
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 250px;
+  }
+  .login {
+    width: 250px;
+  }
+
+  .input {
+    width: 200px;
+  }
+
+  .btnArea {
+    width: 250px;
+  }
+
+  .btnArea::after {
+    width: 250px;
+  }
+
+  .btnLogin, .btnGoogle, .btnJoin {
+    width: 224px;
+  }
+}

@@ -1,5 +1,9 @@
 .main {
-  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px 32px;
   background: #202124;
   border-bottom: 1px solid #434040;
 }
@@ -20,4 +24,17 @@
 
 .btnNonMember:hover {
   background: #f9d1d1;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 150px 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .btnNonMember {
+    width: 250px;
+  }
 }

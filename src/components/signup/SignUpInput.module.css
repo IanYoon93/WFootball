@@ -59,12 +59,12 @@ td {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  gap: 10px;
 }
 
 .btnPostcode {
   width: 90px;
   height: 43px;
-  margin-left: 9px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -74,6 +74,34 @@ td {
 
 .addressBottom {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .tbody {
+    width: 280px;
+  }
+
+  td {
+    width: 250px;
+  }
+
+  .signUpInput {
+    width: 200px;
+  }
+
+  .signUpInputSmall {
+    width: 200px;
+  }
+
+  .addressTop {
+    flex-direction: column;
+  }
+
+  .btnPostcode {
+    align-self: flex-end;
+    margin-right: 15px;
+  }
 }

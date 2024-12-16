@@ -37,3 +37,13 @@ legend {
   width: 1px;
   height: 1px;
 }
+
+
+@media (max-width: 768px) {
+  .main {
+    padding: 150px 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
