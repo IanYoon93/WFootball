@@ -1,8 +1,8 @@
 import styles from './Footer.module.css';
-import { BsInstagram } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
+import { SiNotion } from 'react-icons/si';
 
 export default function Footer() {
   const menus = [
@@ -30,8 +30,8 @@ export default function Footer() {
           })}
         </div>
         <div className={styles.snsLink}>
-          <a href="https://www.instagram.com/yoonmongguuuu/" rel="noreferrer noopener external" target="_blank" className={styles.snsItem}>
-            <BsInstagram className={styles.snsIcon} />
+          <a href="https://sprout-ian.notion.site/55c4488082944e5a920d0ae1d4c52bb7?pvs=4" rel="noreferrer noopener external" target="_blank" className={styles.snsItem}>
+            <SiNotion className={styles.snsIcon} />
           </a>
           <a href="https://github.com/IanYoon93/" rel="noreferrer noopener external" target="_blank" className={styles.snsItem}>
             <FaGithubAlt className={styles.snsIcon} />
