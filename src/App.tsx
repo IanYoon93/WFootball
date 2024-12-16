@@ -4,6 +4,7 @@ import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import Router from './router/Router';
 import useUser from './constants/useUser';
+import { Toaster } from 'sonner';
 
 function App() {
   useUser();
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <section>
           <Router />
+          <Toaster position="top-center" />
         </section>
         <Footer />
       </section>
