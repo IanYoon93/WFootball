@@ -37,7 +37,7 @@ const Hamburger = (): JSX.Element => {
       <div>
         <GiHamburgerMenu className={styles.btnMenu} role="button" onClick={() => setIsOpen(!isOpen)} id="side-menu" />
         {isOpen && (
-          <div>
+          <div className={styles.sideMenu}>
             <label htmlFor="side-menu" className={styles.bg} onClick={() => setIsOpen(!isOpen)}></label>
             <ul className={styles.menu}>
               {menus.map((menu) => {
