@@ -54,7 +54,11 @@
   }
   
   .title {
-    width: 150px;
-    margin-right: auto;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  .headerRight {
+    margin-left: 4px;
   }
 }

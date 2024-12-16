@@ -1,10 +1,7 @@
 .utile {
   display: flex;
   align-items: center;
-}
-
-.utileItem {
-  padding: 0 10px;
+  gap: 10px;
 }
 
 .utileLink {
@@ -25,6 +22,7 @@
   font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
   background: none;
+  padding: 0;
 }
 
 .icon {
@@ -52,8 +50,8 @@
 }
 
 @media (max-width: 1280px) {
-  .utileItem {
-    padding: 0 4px;
+  .utile {
+    gap: 4px;
   }
 
   .icon {
