@@ -3,7 +3,6 @@ import ProductList from '../components/Product/ProductList';
 import BreadCrumbs from '../components/common/BreadCrumbs';
 import Filter from '../components/filter/Filter';
 import { useState } from 'react';
-// import ProductCard from '../components/Product/ProductCard';
 
 const ShoesView = (): JSX.Element => {
   const categories = ['런닝화', '트레이닝화'];
@@ -24,7 +23,6 @@ const ShoesView = (): JSX.Element => {
       <section className={styles.contentCategory}>
         <BreadCrumbs category="Shoes" crumb="런닝화/트레이닝화" />
         <div className={styles.contentHeader}>
-          <h2 className={styles.title}>전체</h2>
           <div className={styles.contentSort}>
             <Filter title="종류" options={['전체', ...categories]} selectedOption={selectedCategory} onOptionChange={handleCategoryChange} />
             <Filter title="브랜드" options={['전체', ...brands]} selectedOption={selectedBrand} onOptionChange={handleBrandChange} />
