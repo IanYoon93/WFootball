@@ -91,3 +91,17 @@
   background: #e7aaaa;
   color: #000;
 }
+
+@media (max-width: 768px) {
+  .modalBox {
+    width: 230px;
+  }
+
+  .buyTitle {
+    font-size: 16px;
+  }
+
+  .delete {
+    font-size: 14px;
+  }
+}
