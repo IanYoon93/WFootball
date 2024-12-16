@@ -8,6 +8,8 @@ import { logout } from '../../service/auth';
 import { User } from 'firebase/auth';
 import { useRecoilValue } from 'recoil';
 import { cartCount } from '../../store/cart';
+import { FiLogIn } from 'react-icons/fi';
+import { FiLogOut } from 'react-icons/fi';
 
 const Utile = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -31,20 +33,11 @@ const Utile = () => {
       <li className={styles.utileItem}>
         {user ? (
           <button type="submit" onClick={handleLogout} className={styles.btnLogout}>
-            로그아웃
+            <FiLogOut className={styles.icon} />
           </button>
         ) : (
           <Link to="/login" className={styles.utileLink}>
-            로그인
-          </Link>
-        )}
-      </li>
-      <li className={styles.utileItem}>
-        {user ? (
-          <div className={styles.utileLink}>회원가입</div>
-        ) : (
-          <Link to="/signup" className={styles.utileLink}>
-            회원가입
+            <FiLogIn className={styles.icon} />
           </Link>
         )}
       </li>
