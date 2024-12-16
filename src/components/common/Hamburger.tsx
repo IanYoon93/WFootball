@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Hamburger.module.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoCloseSharp } from 'react-icons/io5';
 import { useEffect, useRef, useState } from 'react';
 
 const Hamburger = (): JSX.Element => {
@@ -34,25 +35,24 @@ const Hamburger = (): JSX.Element => {
 
   return (
     <div className={styles.hamburgerMenu} ref={menuRef}>
-      <div>
-        <GiHamburgerMenu className={styles.btnMenu} role="button" onClick={() => setIsOpen(!isOpen)} id="side-menu" />
-        {isOpen && (
-          <div className={styles.sideMenu}>
-            <label htmlFor="side-menu" className={styles.bg} onClick={() => setIsOpen(!isOpen)}></label>
-            <ul className={styles.menu}>
-              {menus.map((menu) => {
-                return (
-                  <li key={menu.name}>
-                    <Link to={`/${menu.name}`} className={styles.menuLink} onClick={() => setIsOpen(!isOpen)}>
-                      {menu.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-      </div>
+      <GiHamburgerMenu className={styles.btnMenu} role="button" onClick={() => setIsOpen(!isOpen)} id="side-menu" />
+      {isOpen && (
+        <div className={styles.sideMenu}>
+          <label htmlFor="side-menu" className={styles.bg} onClick={() => setIsOpen(!isOpen)}></label>
+          <ul className={styles.menu}>
+            {menus.map((menu) => {
+              return (
+                <li key={menu.name}>
+                  <Link to={`/${menu.name}`} className={styles.menuLink} onClick={() => setIsOpen(!isOpen)}>
+                    {menu.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <IoCloseSharp className={styles.btnClose} role="button" onClick={() => setIsOpen(!isOpen)} />
+        </div>
+      )}
     </div>
   );
 };
