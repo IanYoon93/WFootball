@@ -1,10 +1,10 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "images": {
-        "formats": ["image/avif", "image/webp"]
-      }
+      "source": "/(.*)"
     }
-  ]
+  ],
+  "images": {
+    "formats": ["image/avif", "image/webp"]
+  }
 }
