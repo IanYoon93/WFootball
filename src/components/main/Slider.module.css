@@ -10,3 +10,19 @@
 .slide {
   min-width: 100%;
 }
+
+.slide img {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    height: 250px;
+  }
+}
