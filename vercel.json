@@ -2,12 +2,6 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ],
       "images": {
         "formats": ["image/avif", "image/webp"]
       }
