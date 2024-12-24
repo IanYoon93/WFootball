@@ -1,3 +1,17 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ],
+      "images": {
+        "formats": ["image/avif", "image/webp"]
+      }
+    }
+  ]
 }
