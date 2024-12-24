@@ -5,12 +5,11 @@ import { Product } from '../../store/products';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
+// TODO : 모바일 크롬 이미지 엑박 해결
 const ProductCard = ({ products, limit }: { products: Product[]; limit: number }): JSX.Element => {
   const [pages, setPage] = useState(1);
   console.log(setPage);
   const offset = (pages - 1) * limit;
-
-  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
   return (
     <>
