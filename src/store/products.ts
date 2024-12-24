@@ -1,8 +1,8 @@
 import { selector } from 'recoil';
 
-const productsURL = '/public/data/data.json';
+const productsURL = '/data/data.json';
 // export const productsURL = import.meta.env.VITE_W_FOOTBALL_API;
-// console.log(productsURL);
+console.log(productsURL);
 
 export interface Product {
   readonly id: number;
