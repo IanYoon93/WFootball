@@ -11,7 +11,7 @@
     "id": 2,
     "title": "나이키 머큐리얼 슈퍼플라이 9 엘리트",
     "price": 329000,
-    "img": "/src/assets/shoes/soccer_shoes02.jpeg",
+    "img": "/assets/shoes/soccer_shoes02.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "나이키 팬텀 GX 2 엘리트",
     "price": 299000,
-    "img": "/src/assets/shoes/soccer_shoes03.jpeg",
+    "img": "/assets/shoes/soccer_shoes03.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "나이키 팬텀 루나 2 엘리트",
     "price": 329000,
-    "img": "/src/assets/shoes/soccer_shoes04.jpeg",
+    "img": "/assets/shoes/soccer_shoes04.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "나이키 팬텀 GX 2 아카데미",
     "price": 99000,
-    "img": "/src/assets/shoes/soccer_shoes05.jpeg",
+    "img": "/assets/shoes/soccer_shoes05.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "나이키 티엠포 레전드 10 아카데미",
     "price": 9000,
-    "img": "/src/assets/shoes/soccer_shoes06.jpeg",
+    "img": "/assets/shoes/soccer_shoes06.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "title": "나이키 티엠포 레전드 10 엘리트",
     "price": 269000,
-    "img": "/src/assets/shoes/soccer_shoes07.jpeg",
+    "img": "/assets/shoes/soccer_shoes07.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "title": "나이키 티엠포 레전드 10 엘리트",
     "price": 269000,
-    "img": "/src/assets/shoes/soccer_shoes08.jpeg",
+    "img": "/assets/shoes/soccer_shoes08.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "title": "나이키 팬텀 GX 2 엘리트",
     "price": 299000,
-    "img": "/src/assets/shoes/soccer_shoes09.jpeg",
+    "img": "/assets/shoes/soccer_shoes09.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "title": "나이키 머큐리얼 베이퍼 15 아카데미",
     "price": 99000,
-    "img": "/src/assets/shoes/soccer_shoes10.jpeg",
+    "img": "/assets/shoes/soccer_shoes10.jpeg",
     "category": "축구화",
     "brand": "Nike"
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "title": "아디다스 X 크레이지패스트+ FG",
     "price": 369000,
-    "img": "/src/assets/shoes/soccer_shoes11.jpg",
+    "img": "/assets/shoes/soccer_shoes11.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "title": "아디다스 X 크레이지패스트.3 MG",
     "price": 109000,
-    "img": "/src/assets/shoes/soccer_shoes12.jpg",
+    "img": "/assets/shoes/soccer_shoes12.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "title": "아디다스 프레데터 24 리그 로우 MG",
     "price": 109000,
-    "img": "/src/assets/shoes/soccer_shoes13.jpg",
+    "img": "/assets/shoes/soccer_shoes13.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "title": "아디다스 프레데터 24 리그 로우 MG",
     "price": 109000,
-    "img": "/src/assets/shoes/soccer_shoes14.png",
+    "img": "/assets/shoes/soccer_shoes14.png",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "title": "아디다스 프레데터 24 리그 FG",
     "price": 119000,
-    "img": "/src/assets/shoes/soccer_shoes15.jpg",
+    "img": "/assets/shoes/soccer_shoes15.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "title": "아디다스 프레데터 24 리그 FG",
     "price": 119000,
-    "img": "/src/assets/shoes/soccer_shoes16.jpg",
+    "img": "/assets/shoes/soccer_shoes16.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "title": "아디다스 프레데터 엘리트 AG",
     "price": 309000,
-    "img": "/src/assets/shoes/soccer_shoes17.jpg",
+    "img": "/assets/shoes/soccer_shoes17.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "title": "아디다스 프레데터 엘리트 HG",
     "price": 309000,
-    "img": "/src/assets/shoes/soccer_shoes18.jpg",
+    "img": "/assets/shoes/soccer_shoes18.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -147,7 +147,7 @@
     "id": 19,
     "title": "아디다스 프레데터 애큐러시+ FG",
     "price": 369000,
-    "img": "/src/assets/shoes/soccer_shoes19.jpg",
+    "img": "/assets/shoes/soccer_shoes19.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -155,7 +155,7 @@
     "id": 20,
     "title": "아디다스 프레데터 엘리트 FG",
     "price": 309000,
-    "img": "/src/assets/shoes/soccer_shoes20.jpg",
+    "img": "/assets/shoes/soccer_shoes20.jpg",
     "category": "축구화",
     "brand": "Adidas"
   },
@@ -163,7 +163,7 @@
     "id": 21,
     "title": "나이키 머큐리얼 베이퍼 15 프로",
     "price": 139000,
-    "img": "/src/assets/shoes/futsal_shoes01.jpeg",
+    "img": "/assets/shoes/futsal_shoes01.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "title": "나이키 티엠포 레전드 10 아카데미",
     "price": 99000,
-    "img": "/src/assets/shoes/futsal_shoes02.jpeg",
+    "img": "/assets/shoes/futsal_shoes02.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -179,7 +179,7 @@
     "id": 23,
     "title": "나이키 티엠포 레전드 10 프로",
     "price": 159000,
-    "img": "/src/assets/shoes/futsal_shoes03.jpeg",
+    "img": "/assets/shoes/futsal_shoes03.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -187,7 +187,7 @@
     "id": 24,
     "title": "나이키 팬텀 GX 2 아카데미",
     "price": 99000,
-    "img": "/src/assets/shoes/futsal_shoes04.jpeg",
+    "img": "/assets/shoes/futsal_shoes04.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -195,7 +195,7 @@
     "id": 25,
     "title": "나이키 팬텀 루나 2 아카데미",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes05.jpeg",
+    "img": "/assets/shoes/futsal_shoes05.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -203,7 +203,7 @@
     "id": 26,
     "title": "나이키 머큐리얼 베이퍼 15 아카데미",
     "price": 99000,
-    "img": "/src/assets/shoes/futsal_shoes06.jpeg",
+    "img": "/assets/shoes/futsal_shoes06.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -211,7 +211,7 @@
     "id": 27,
     "title": "나이키 머큐리얼 슈퍼플라이 9 아카데미",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes07.jpeg",
+    "img": "/assets/shoes/futsal_shoes07.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -219,7 +219,7 @@
     "id": 28,
     "title": "나이키 팬텀 GX 2 프로",
     "price": 159000,
-    "img": "/src/assets/shoes/futsal_shoes08.jpeg",
+    "img": "/assets/shoes/futsal_shoes08.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -227,7 +227,7 @@
     "id": 29,
     "title": "나이키 슈퍼플라이 9 아카데미 머큐리얼 드림 스피드",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes09.jpeg",
+    "img": "/assets/shoes/futsal_shoes09.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -235,7 +235,7 @@
     "id": 30,
     "title": "나이키 베이퍼 15 아카데미 머큐리얼 드림 스피드",
     "price": 109000,
-    "img": "/src/assets/shoes/futsal_shoes10.jpeg",
+    "img": "/assets/shoes/futsal_shoes10.jpeg",
     "category": "풋살화",
     "brand": "Nike"
   },
@@ -243,7 +243,7 @@
     "id": 31,
     "title": "아디다스 X 크레이지패스트 손.3 TF",
     "price": 129000,
-    "img": "/src/assets/shoes/futsal_shoes11.jpg",
+    "img": "/assets/shoes/futsal_shoes11.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -251,7 +251,7 @@
     "id": 32,
     "title": "아디다스 X 크레이지패스트.4 TF",
     "price": 79000,
-    "img": "/src/assets/shoes/futsal_shoes12.jpg",
+    "img": "/assets/shoes/futsal_shoes12.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -259,7 +259,7 @@
     "id": 33,
     "title": "아디다스 X 크레이지패스트.4 TF",
     "price": 79000,
-    "img": "/src/assets/shoes/futsal_shoes13.jpg",
+    "img": "/assets/shoes/futsal_shoes13.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -267,7 +267,7 @@
     "id": 34,
     "title": "아디다스 프레데터 24 리그 로우 TF",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes14.jpg",
+    "img": "/assets/shoes/futsal_shoes14.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -275,7 +275,7 @@
     "id": 35,
     "title": "프레데터 24 리그 로우 TF",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes15.jpg",
+    "img": "/assets/shoes/futsal_shoes15.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -283,7 +283,7 @@
     "id": 36,
     "title": "아디다스 프레데터 엘리트 TF",
     "price": 179000,
-    "img": "/src/assets/shoes/futsal_shoes16.jpg",
+    "img": "/assets/shoes/futsal_shoes16.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -291,7 +291,7 @@
     "id": 37,
     "title": "아디다스 X 크레이지패스트 엘리트 TF",
     "price": 179000,
-    "img": "/src/assets/shoes/futsal_shoes17.jpg",
+    "img": "/assets/shoes/futsal_shoes17.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -299,7 +299,7 @@
     "id": 38,
     "title": "아디다스 프레데터 24 리그 로우 TF",
     "price": 119000,
-    "img": "/src/assets/shoes/futsal_shoes18.jpg",
+    "img": "/assets/shoes/futsal_shoes18.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -307,7 +307,7 @@
     "id": 39,
     "title": "아디다스 프레데터 24 리그 LL TF",
     "price": 129000,
-    "img": "/src/assets/shoes/futsal_shoes19.jpg",
+    "img": "/assets/shoes/futsal_shoes19.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -315,7 +315,7 @@
     "id": 40,
     "title": "아디다스 X 크레이지패스트 클럽 TF",
     "price": 79000,
-    "img": "/src/assets/shoes/futsal_shoes20.jpg",
+    "img": "/assets/shoes/futsal_shoes20.jpg",
     "category": "풋살화",
     "brand": "Adidas"
   },
@@ -323,7 +323,7 @@
     "id": 41,
     "title": "나이키 스트릭플라이",
     "price": 189000,
-    "img": "/src/assets/shoes/running_shoes01.jpeg",
+    "img": "/assets/shoes/running_shoes01.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -331,7 +331,7 @@
     "id": 42,
     "title": "나이키 레볼루션 7",
     "price": 79000,
-    "img": "/src/assets/shoes/running_shoes02.jpeg",
+    "img": "/assets/shoes/running_shoes02.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -339,7 +339,7 @@
     "id": 43,
     "title": "나이키 페가수스 40",
     "price": 149000,
-    "img": "/src/assets/shoes/running_shoes03.jpeg",
+    "img": "/assets/shoes/running_shoes03.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -347,7 +347,7 @@
     "id": 44,
     "title": "나이키 다운시프터 13",
     "price": 79000,
-    "img": "/src/assets/shoes/running_shoes04.jpeg",
+    "img": "/assets/shoes/running_shoes04.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -355,7 +355,7 @@
     "id": 45,
     "title": "나이키 인피니티 런 4",
     "price": 179000,
-    "img": "/src/assets/shoes/running_shoes05.jpeg",
+    "img": "/assets/shoes/running_shoes05.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -363,7 +363,7 @@
     "id": 46,
     "title": "나이키 모티바",
     "price": 129000,
-    "img": "/src/assets/shoes/running_shoes06.jpeg",
+    "img": "/assets/shoes/running_shoes06.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -371,7 +371,7 @@
     "id": 47,
     "title": "나이키 인빈서블 3",
     "price": 209000,
-    "img": "/src/assets/shoes/running_shoes07.jpeg",
+    "img": "/assets/shoes/running_shoes07.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -379,7 +379,7 @@
     "id": 48,
     "title": "나이키 줌 플라이 5",
     "price": 189000,
-    "img": "/src/assets/shoes/running_shoes08.jpeg",
+    "img": "/assets/shoes/running_shoes08.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -387,7 +387,7 @@
     "id": 49,
     "title": "나이키 인터랙트 런",
     "price": 99000,
-    "img": "/src/assets/shoes/running_shoes09.jpeg",
+    "img": "/assets/shoes/running_shoes09.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -395,7 +395,7 @@
     "id": 50,
     "title": "나이키 인빈서블 3",
     "price": 209000,
-    "img": "/src/assets/shoes/running_shoes10.jpeg",
+    "img": "/assets/shoes/running_shoes10.jpeg",
     "category": "런닝화",
     "brand": "Nike"
   },
@@ -403,7 +403,7 @@
     "id": 51,
     "title": "아디다스 레이서 TR23",
     "price": 89000,
-    "img": "/src/assets/shoes/running_shoes11.jpg",
+    "img": "/assets/shoes/running_shoes11.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -411,7 +411,7 @@
     "id": 52,
     "title": "아디다스 레이서 TR23",
     "price": 89000,
-    "img": "/src/assets/shoes/running_shoes12.jpg",
+    "img": "/assets/shoes/running_shoes12.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -419,7 +419,7 @@
     "id": 53,
     "title": "아디다스 슈퍼노바 라이즈",
     "price": 159000,
-    "img": "/src/assets/shoes/running_shoes13.jpg",
+    "img": "/assets/shoes/running_shoes13.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -427,7 +427,7 @@
     "id": 54,
     "title": "아디다스 아디제로 SL W",
     "price": 139000,
-    "img": "/src/assets/shoes/running_shoes14.jpg",
+    "img": "/assets/shoes/running_shoes14.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -435,7 +435,7 @@
     "id": 55,
     "title": "아디다스 슈퍼노바 솔루션",
     "price": 179000,
-    "img": "/src/assets/shoes/running_shoes15.jpg",
+    "img": "/assets/shoes/running_shoes15.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -443,7 +443,7 @@
     "id": 56,
     "title": "아디다스 슈퍼노바 솔루션",
     "price": 179000,
-    "img": "/src/assets/shoes/running_shoes16.jpg",
+    "img": "/assets/shoes/running_shoes16.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -451,7 +451,7 @@
     "id": 57,
     "title": "아디다스 슈퍼노바 라이즈",
     "price": 159000,
-    "img": "/src/assets/shoes/running_shoes17.jpg",
+    "img": "/assets/shoes/running_shoes17.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -459,7 +459,7 @@
     "id": 58,
     "title": "아디다스 리스폰스",
     "price": 89000,
-    "img": "/src/assets/shoes/running_shoes18.jpg",
+    "img": "/assets/shoes/running_shoes18.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -467,7 +467,7 @@
     "id": 59,
     "title": "아디다스 슈퍼노바 라이즈",
     "price": 159000,
-    "img": "/src/assets/shoes/running_shoes19.jpg",
+    "img": "/assets/shoes/running_shoes19.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -475,7 +475,7 @@
     "id": 60,
     "title": "아디다스 슈퍼노바 라이즈",
     "price": 89000,
-    "img": "/src/assets/shoes/running_shoes20.jpg",
+    "img": "/assets/shoes/running_shoes20.jpg",
     "category": "런닝화",
     "brand": "Adidas"
   },
@@ -483,7 +483,7 @@
     "id": 61,
     "title": "나이키 버세어",
     "price": 159000,
-    "img": "/src/assets/shoes/training_shoes01.jpeg",
+    "img": "/assets/shoes/training_shoes01.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -491,7 +491,7 @@
     "id": 62,
     "title": "나이키 프리 메트콘 5",
     "price": 139000,
-    "img": "/src/assets/shoes/training_shoes02.jpeg",
+    "img": "/assets/shoes/training_shoes02.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -499,7 +499,7 @@
     "id": 63,
     "title": "나이키 모티바",
     "price": 129000,
-    "img": "/src/assets/shoes/training_shoes03.jpeg",
+    "img": "/assets/shoes/training_shoes03.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -507,7 +507,7 @@
     "id": 64,
     "title": "나이키 메트콘 9 AMP",
     "price": 143200,
-    "img": "/src/assets/shoes/training_shoes04.jpeg",
+    "img": "/assets/shoes/training_shoes04.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -515,7 +515,7 @@
     "id": 65,
     "title": "나이키 메트콘 9",
     "price": 163200,
-    "img": "/src/assets/shoes/training_shoes05.jpeg",
+    "img": "/assets/shoes/training_shoes05.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -523,7 +523,7 @@
     "id": 66,
     "title": "나이키 줌 벨라 6",
     "price": 99000,
-    "img": "/src/assets/shoes/training_shoes06.jpeg",
+    "img": "/assets/shoes/training_shoes06.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -531,7 +531,7 @@
     "id": 67,
     "title": "나이키 프리 메트콘 5",
     "price": 139000,
-    "img": "/src/assets/shoes/training_shoes07.jpeg",
+    "img": "/assets/shoes/training_shoes07.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -539,7 +539,7 @@
     "id": 68,
     "title": "나이키 로말레오 4",
     "price": 329000,
-    "img": "/src/assets/shoes/training_shoes08.jpeg",
+    "img": "/assets/shoes/training_shoes08.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -547,7 +547,7 @@
     "id": 69,
     "title": "나이키 메트콘 9 AMP",
     "price": 179000,
-    "img": "/src/assets/shoes/training_shoes09.jpeg",
+    "img": "/assets/shoes/training_shoes09.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -555,7 +555,7 @@
     "id": 70,
     "title": "나이키 메트콘 9",
     "price": 169000,
-    "img": "/src/assets/shoes/training_shoes10.jpeg",
+    "img": "/assets/shoes/training_shoes10.jpeg",
     "category": "트레이닝화",
     "brand": "Nike"
   },
@@ -563,7 +563,7 @@
     "id": 71,
     "title": "아디다스 스피리테인 2000",
     "price": 109000,
-    "img": "/src/assets/shoes/training_shoes11.jpg",
+    "img": "/assets/shoes/training_shoes11.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -571,7 +571,7 @@
     "id": 72,
     "title": "아디다스 레이서 TR23",
     "price": 89000,
-    "img": "/src/assets/shoes/training_shoes12.jpg",
+    "img": "/assets/shoes/training_shoes12.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -579,7 +579,7 @@
     "id": 73,
     "title": "아디다스 레이서 TR23",
     "price": 89000,
-    "img": "/src/assets/shoes/training_shoes13.jpg",
+    "img": "/assets/shoes/training_shoes13.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -587,7 +587,7 @@
     "id": 74,
     "title": "아디다스 LITE RACER REBOLD",
     "price": 85000,
-    "img": "/src/assets/shoes/training_shoes14.jpg",
+    "img": "/assets/shoes/training_shoes14.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -595,7 +595,7 @@
     "id": 75,
     "title": "아디다스 LITE RACER REBOLD",
     "price": 85000,
-    "img": "/src/assets/shoes/training_shoes15.jpg",
+    "img": "/assets/shoes/training_shoes15.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -603,7 +603,7 @@
     "id": 76,
     "title": "아디다스 울트라부스트 1.0",
     "price": 199000,
-    "img": "/src/assets/shoes/training_shoes16.jpg",
+    "img": "/assets/shoes/training_shoes16.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -611,7 +611,7 @@
     "id": 77,
     "title": "아디다스 스피리테인 2000",
     "price": 109000,
-    "img": "/src/assets/shoes/training_shoes17.jpg",
+    "img": "/assets/shoes/training_shoes17.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -619,7 +619,7 @@
     "id": 78,
     "title": "아디다스 울트라부스트 1.0",
     "price": 229000,
-    "img": "/src/assets/shoes/training_shoes18.jpg",
+    "img": "/assets/shoes/training_shoes18.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -627,7 +627,7 @@
     "id": 79,
     "title": "아디다스 X PLRBOOST",
     "price": 169000,
-    "img": "/src/assets/shoes/training_shoes19.jpg",
+    "img": "/assets/shoes/training_shoes19.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -635,7 +635,7 @@
     "id": 80,
     "title": "아디다스 울트라부스트 1.0",
     "price": 169000,
-    "img": "/src/assets/shoes/training_shoes20.jpg",
+    "img": "/assets/shoes/training_shoes20.jpg",
     "category": "트레이닝화",
     "brand": "Adidas"
   },
@@ -643,7 +643,7 @@
     "id": 81,
     "title": "나이키 우븐 재킷",
     "price": 139900,
-    "img": "/src/assets/clothes/clothes01.jpeg",
+    "img": "/assets/clothes/clothes01.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -651,7 +651,7 @@
     "id": 82,
     "title": "나이키 러닝 재킷",
     "price": 189900,
-    "img": "/src/assets/clothes/clothes02.jpeg",
+    "img": "/assets/clothes/clothes02.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -659,7 +659,7 @@
     "id": 83,
     "title": "나이키 오버사이즈 아노락 재킷",
     "price": 169900,
-    "img": "/src/assets/clothes/clothes03.jpeg",
+    "img": "/assets/clothes/clothes03.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -667,7 +667,7 @@
     "id": 84,
     "title": "나이키 리펠 재킷",
     "price": 209900,
-    "img": "/src/assets/clothes/clothes04.jpeg",
+    "img": "/assets/clothes/clothes04.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -675,7 +675,7 @@
     "id": 85,
     "title": "나이키 러닝 재킷",
     "price": 105000,
-    "img": "/src/assets/clothes/clothes05.jpeg",
+    "img": "/assets/clothes/clothes05.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -683,7 +683,7 @@
     "id": 86,
     "title": "나이키 여성 슬림 핏 크롭 티셔츠",
     "price": 49000,
-    "img": "/src/assets/clothes/clothes06.jpeg",
+    "img": "/assets/clothes/clothes06.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -691,7 +691,7 @@
     "id": 87,
     "title": "나이키 드라이 핏 긴팔 탑",
     "price": 55000,
-    "img": "/src/assets/clothes/clothes07.jpeg",
+    "img": "/assets/clothes/clothes07.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -699,7 +699,7 @@
     "id": 88,
     "title": "나이키 여성 드라이 핏 반팔 팁",
     "price": 49000,
-    "img": "/src/assets/clothes/clothes08.jpeg",
+    "img": "/assets/clothes/clothes08.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -707,7 +707,7 @@
     "id": 89,
     "title": "나이키 여성 티셔츠",
     "price": 39000,
-    "img": "/src/assets/clothes/clothes09.jpeg",
+    "img": "/assets/clothes/clothes09.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -715,7 +715,7 @@
     "id": 90,
     "title": "나이키 쿼터집 러닝 탑",
     "price": 85000,
-    "img": "/src/assets/clothes/clothes10.jpeg",
+    "img": "/assets/clothes/clothes10.jpeg",
     "category": "상의",
     "brand": "Nike"
   },
@@ -723,7 +723,7 @@
     "id": 91,
     "title": "아디다스 에센셜+ 스몰 로고 프렌치 테리 크루 스웨트셔츠",
     "price": 75000,
-    "img": "/src/assets/clothes/clothes11.jpg",
+    "img": "/assets/clothes/clothes11.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -731,7 +731,7 @@
     "id": 92,
     "title": "아디다스 에센셜+ 프렌치 테리 후디",
     "price": 89000,
-    "img": "/src/assets/clothes/clothes12.jpg",
+    "img": "/assets/clothes/clothes12.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -739,7 +739,7 @@
     "id": 93,
     "title": "아디다스 에센셜 3S 우븐 윈드브레이커",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes13.jpg",
+    "img": "/assets/clothes/clothes13.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -747,7 +747,7 @@
     "id": 94,
     "title": "아디다스 Z.N.E 윈터라이즈드 후디",
     "price": 129000,
-    "img": "/src/assets/clothes/clothes14.jpg",
+    "img": "/assets/clothes/clothes14.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -755,7 +755,7 @@
     "id": 95,
     "title": "아디다스 퓨처 아이콘 3S 탱크탑",
     "price": 39000,
-    "img": "/src/assets/clothes/clothes15.jpg",
+    "img": "/assets/clothes/clothes15.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -763,7 +763,7 @@
     "id": 96,
     "title": "아디다스 퓨처 아이콘 3S 봄버 재킷",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes16.jpg",
+    "img": "/assets/clothes/clothes16.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -771,7 +771,7 @@
     "id": 97,
     "title": "아디다스 마이쉘터 콜드레디 재킷",
     "price": 399000,
-    "img": "/src/assets/clothes/clothes17.jpg",
+    "img": "/assets/clothes/clothes17.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -779,7 +779,7 @@
     "id": 98,
     "title": "아디다스 Z.N.E 오버헤드 후디",
     "price": 129000,
-    "img": "/src/assets/clothes/clothes18.jpg",
+    "img": "/assets/clothes/clothes18.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -787,7 +787,7 @@
     "id": 99,
     "title": "아디다스 트래비어 콜드레디 재킷",
     "price": 279000,
-    "img": "/src/assets/clothes/clothes19.jpg",
+    "img": "/assets/clothes/clothes19.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -795,7 +795,7 @@
     "id": 100,
     "title": "아디다스 퓨처 아이콘 3S 후디",
     "price": 89000,
-    "img": "/src/assets/clothes/clothes20.jpg",
+    "img": "/assets/clothes/clothes20.jpg",
     "category": "상의",
     "brand": "Adidas"
   },
@@ -803,7 +803,7 @@
     "id": 101,
     "title": "나이키 여성 하이웨이스트 와이드 레그 플리스 팬츠",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes21.jpeg",
+    "img": "/assets/clothes/clothes21.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -811,7 +811,7 @@
     "id": 102,
     "title": "나이키 여성 하이웨이스트 오버사이즈 스웻팬츠",
     "price": 85000,
-    "img": "/src/assets/clothes/clothes22.jpeg",
+    "img": "/assets/clothes/clothes22.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -819,7 +819,7 @@
     "id": 103,
     "title": "나이키 여성 미드라이즈 와이드 레그 스웻팬츠",
     "price": 85000,
-    "img": "/src/assets/clothes/clothes23.jpeg",
+    "img": "/assets/clothes/clothes23.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -827,7 +827,7 @@
     "id": 104,
     "title": "나이키 여성 미드라이즈 오버나이즈 스웻팬츠",
     "price": 79000,
-    "img": "/src/assets/clothes/clothes24.jpeg",
+    "img": "/assets/clothes/clothes24.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -835,7 +835,7 @@
     "id": 105,
     "title": "나이키 여성 하이웨이스트 와이드 레그 스웻팬츠",
     "price": 95000,
-    "img": "/src/assets/clothes/clothes25.jpeg",
+    "img": "/assets/clothes/clothes25.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -843,7 +843,7 @@
     "id": 106,
     "title": "나이키 여성 우븐 하이웨이스트 팬츠",
     "price": 105000,
-    "img": "/src/assets/clothes/clothes26.jpeg",
+    "img": "/assets/clothes/clothes26.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -851,7 +851,7 @@
     "id": 107,
     "title": "나이키 여성 리펠 미드라이즈 팬츠",
     "price": 159000,
-    "img": "/src/assets/clothes/clothes27.jpeg",
+    "img": "/assets/clothes/clothes27.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -859,7 +859,7 @@
     "id": 108,
     "title": "나이키 여성 하이웨이스트 7/8 조거",
     "price": 85000,
-    "img": "/src/assets/clothes/clothes28.jpeg",
+    "img": "/assets/clothes/clothes28.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -867,7 +867,7 @@
     "id": 109,
     "title": "나이키 여성 오버사이즈 로고 스웻팬츠",
     "price": 95000,
-    "img": "/src/assets/clothes/clothes29.jpeg",
+    "img": "/assets/clothes/clothes29.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -875,7 +875,7 @@
     "id": 110,
     "title": "나이키 여성 울트라 하이웨이스트 팬츠",
     "price": 95000,
-    "img": "/src/assets/clothes/clothes30.jpeg",
+    "img": "/assets/clothes/clothes30.jpeg",
     "category": "하의",
     "brand": "Nike"
   },
@@ -883,7 +883,7 @@
     "id": 111,
     "title": "아디다스 바스켓볼 스냅 팬츠",
     "price": 119000,
-    "img": "/src/assets/clothes/clothes31.jpg",
+    "img": "/assets/clothes/clothes31.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -891,7 +891,7 @@
     "id": 112,
     "title": "아디다스 바스켓볼 플리스 조거",
     "price": 109000,
-    "img": "/src/assets/clothes/clothes32.jpg",
+    "img": "/assets/clothes/clothes32.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -899,7 +899,7 @@
     "id": 113,
     "title": "아디다스 파이어버드 루즈 트랙 팬츠",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes33.jpg",
+    "img": "/assets/clothes/clothes33.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -907,7 +907,7 @@
     "id": 114,
     "title": "아디다스 베켄바우어 트랙수트 팬츠",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes34.jpg",
+    "img": "/assets/clothes/clothes34.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -915,7 +915,7 @@
     "id": 115,
     "title": "아디다스 W 삼선 SJ 클로즈드 팬츠",
     "price": 75000,
-    "img": "/src/assets/clothes/clothes35.jpg",
+    "img": "/assets/clothes/clothes35.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -923,7 +923,7 @@
     "id": 116,
     "title": "아디다스 바스켓볼 플리스 조거",
     "price": 109000,
-    "img": "/src/assets/clothes/clothes36.jpg",
+    "img": "/assets/clothes/clothes36.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -931,7 +931,7 @@
     "id": 117,
     "title": "아디다스 오리지널스 프리미엄 베켄바우어 럭스 트랙 팬츠",
     "price": 149000,
-    "img": "/src/assets/clothes/clothes37.jpg",
+    "img": "/assets/clothes/clothes37.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -939,7 +939,7 @@
     "id": 118,
     "title": "아디다스 베켄바우어 트랙수트 팬츠",
     "price": 99000,
-    "img": "/src/assets/clothes/clothes38.jpg",
+    "img": "/assets/clothes/clothes38.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -947,7 +947,7 @@
     "id": 119,
     "title": "아디다스 에센셜 3S 프렌치 테리 커프트 팬츠",
     "price": 75000,
-    "img": "/src/assets/clothes/clothes39.jpg",
+    "img": "/assets/clothes/clothes39.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -955,7 +955,7 @@
     "id": 120,
     "title": "아디다스 FR PARACHT PANT",
     "price": 119000,
-    "img": "/src/assets/clothes/clothes40.jpg",
+    "img": "/assets/clothes/clothes40.jpg",
     "category": "하의",
     "brand": "Adidas"
   },
@@ -963,7 +963,7 @@
     "id": 121,
     "title": "나이키 오버 더 카프 축구 양말",
     "price": 16000,
-    "img": "/src/assets/accessories/accessories01.jpeg",
+    "img": "/assets/accessories/accessories01.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -971,7 +971,7 @@
     "id": 122,
     "title": "나이키 매치",
     "price": 39000,
-    "img": "/src/assets/accessories/accessories02.jpeg",
+    "img": "/assets/accessories/accessories02.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -979,7 +979,7 @@
     "id": 123,
     "title": "나이키 백팩(30L)",
     "price": 69000,
-    "img": "/src/assets/accessories/accessories03.jpeg",
+    "img": "/assets/accessories/accessories03.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -987,7 +987,7 @@
     "id": 124,
     "title": "나이키 축구 짐색(18L)",
     "price": 29000,
-    "img": "/src/assets/accessories/accessories04.jpeg",
+    "img": "/assets/accessories/accessories04.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -995,7 +995,7 @@
     "id": 125,
     "title": "나이키 머큐리얼 라이트",
     "price": 29000,
-    "img": "/src/assets/accessories/accessories05.jpeg",
+    "img": "/assets/accessories/accessories05.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -1003,7 +1003,7 @@
     "id": 126,
     "title": "나이키 차지",
     "price": 25000,
-    "img": "/src/assets/accessories/accessories06.jpeg",
+    "img": "/assets/accessories/accessories06.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -1011,7 +1011,7 @@
     "id": 127,
     "title": "나이키 그립 3",
     "price": 85000,
-    "img": "/src/assets/accessories/accessories07.jpeg",
+    "img": "/assets/accessories/accessories07.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -1019,7 +1019,7 @@
     "id": 128,
     "title": "나이키 J",
     "price": 15000,
-    "img": "/src/assets/accessories/accessories08.jpeg",
+    "img": "/assets/accessories/accessories08.jpeg",
     "category": "기타용품",
     "brand": "Nike"
   },
@@ -1027,7 +1027,7 @@
     "id": 129,
     "title": "아디다스 밀라노 23 삭스",
     "price": 15000,
-    "img": "/src/assets/accessories/accessories09.jpg",
+    "img": "/assets/accessories/accessories09.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1035,7 +1035,7 @@
     "id": 130,
     "title": "아디다스 밀라노 23 삭스",
     "price": 15000,
-    "img": "/src/assets/accessories/accessories10.jpg",
+    "img": "/assets/accessories/accessories10.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1043,7 +1043,7 @@
     "id": 131,
     "title": "아디다스 밀라노 23 삭스",
     "price": 15000,
-    "img": "/src/assets/accessories/accessories11.jpg",
+    "img": "/assets/accessories/accessories11.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1051,7 +1051,7 @@
     "id": 132,
     "title": "아디다스 UCL 프로 23/24 녹아웃 볼",
     "price": 189000,
-    "img": "/src/assets/accessories/accessories12.jpg",
+    "img": "/assets/accessories/accessories12.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1059,7 +1059,7 @@
     "id": 133,
     "title": "아디다스 UCL 프로 23/24 녹아웃 미니 볼",
     "price": 20000,
-    "img": "/src/assets/accessories/accessories13.jpg",
+    "img": "/assets/accessories/accessories13.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1067,7 +1067,7 @@
     "id": 134,
     "title": "아디다스 UCL 리그 23/24 녹아웃 볼",
     "price": 49000,
-    "img": "/src/assets/accessories/accessories14.jpg",
+    "img": "/assets/accessories/accessories14.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1075,7 +1075,7 @@
     "id": 135,
     "title": "아디다스 UCL COM",
     "price": 79000,
-    "img": "/src/assets/accessories/accessories15.jpg",
+    "img": "/assets/accessories/accessories15.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1083,7 +1083,7 @@
     "id": 136,
     "title": "아디다스 WUCL MINI",
     "price": 20000,
-    "img": "/src/assets/accessories/accessories16.jpg",
+    "img": "/assets/accessories/accessories16.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1091,7 +1091,7 @@
     "id": 137,
     "title": "아디다스 UCL 프로 볼",
     "price": 189000,
-    "img": "/src/assets/accessories/accessories17.jpg",
+    "img": "/assets/accessories/accessories17.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1099,7 +1099,7 @@
     "id": 138,
     "title": "아디다스 WUCL LGE",
     "price": 49000,
-    "img": "/src/assets/accessories/accessories18.jpg",
+    "img": "/assets/accessories/accessories18.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1107,7 +1107,7 @@
     "id": 139,
     "title": "아디다스 EPP CLB",
     "price": 29000,
-    "img": "/src/assets/accessories/accessories19.jpg",
+    "img": "/assets/accessories/accessories19.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   },
@@ -1115,7 +1115,7 @@
     "id": 140,
     "title": "아디다스 EPP CLB",
     "price": 29000,
-    "img": "/src/assets/accessories/accessories20.jpg",
+    "img": "/assets/accessories/accessories20.jpg",
     "category": "기타용품",
     "brand": "Adidas"
   }
