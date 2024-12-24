@@ -4,7 +4,10 @@
       "source": "/(.*)"
     }
   ],
-  "images": {
-    "formats": ["image/avif", "image/webp"]
-  }
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ]
 }
