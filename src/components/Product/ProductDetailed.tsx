@@ -40,6 +40,7 @@ const ProductDetailed = (): JSX.Element => {
 
   // 사이즈 선택 기능
   const handelChangeSize = (e: React.MouseEvent<HTMLButtonElement>) => {
+    // 버튼의 value 값으로 선택된 사이즈 변경
     setSelectedSize(e.currentTarget.value);
   };
 
@@ -62,14 +63,11 @@ const ProductDetailed = (): JSX.Element => {
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
           <div className={styles.sizeArea}>
-            <strong>사이즈 선택</strong>
-            <div className={styles.btnSizeArea}>
-              {['220', '225', '230', '235', '240', '245', '250', '255'].map((size) => (
-                <button key={size} type="button" value={size} className={`${styles.btnSize} ${selectedSize === size ? styles.selected : ''}`} onClick={handelChangeSize}>
-                  {size}
-                </button>
-              ))}
-            </div>
+            {product.size?.map((size) => (
+              <button key={size.value} type="button" value={size.value} className={`${styles.btnSize} ${selectedSize === size.value ? styles.selected : ''}`} onClick={handelChangeSize}>
+                {size.text}
+              </button>
+            ))}
           </div>
           {selectedSize && (
             <div className={styles.selectedSize}>

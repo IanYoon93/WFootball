@@ -11,35 +11,24 @@ export interface Product {
   readonly img: string;
   readonly category: string;
   readonly brand: string;
+  readonly size: Array<{ value: string; text: string }>;
 }
 
-const saveData = (data: Product[]) => {
-  localStorage.setItem('productsData', JSON.stringify(data));
-};
+const response = await fetch(productsURL);
+const data = await response.json();
 
-const getData = () => {
-  const data = localStorage.getItem('productsData');
-  return data ? JSON.parse(data) : [];
-};
+console.log(data);
 
 export const productsList = selector({
   key: 'productList',
   get: async () => {
     try {
-      const storeData = getData();
-
-      if (storeData.length > 0) {
-        return storeData;
-      }
-
       const response = await fetch(productsURL);
       const data = await response.json();
 
-      saveData(data);
-
-      return data || [];
+      return data;
     } catch (error) {
-      console.log(`Error: \n${error}`);
+      console.error(`Error loading products: ${error}`);
       return [];
     }
   },
