@@ -2034,12 +2034,7 @@
     "img": "/assets/accessories/accessories03.jpeg",
     "category": "기타용품",
     "brand": "Nike",
-    "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
-    ]
+    "size": [{ "value": "30L", "text": "30L" }]
   },
   {
     "id": 124,
@@ -2048,12 +2043,7 @@
     "img": "/assets/accessories/accessories04.jpeg",
     "category": "기타용품",
     "brand": "Nike",
-    "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
-    ]
+    "size": [{ "value": "18L", "text": "18L" }]
   },
   {
     "id": 125,
@@ -2161,24 +2151,20 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
     "id": 133,
-    "title": "아디다스 UCL 프로 23/24 녹아웃 미니 볼",
+    "title": "아디다스 UCL 프로 23/24 녹아웃 볼",
     "price": 20000,
     "img": "/assets/accessories/accessories13.jpg",
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2189,10 +2175,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2203,10 +2187,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2217,10 +2199,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2231,10 +2211,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2245,10 +2223,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2259,10 +2235,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   },
   {
@@ -2273,10 +2247,8 @@
     "category": "기타용품",
     "brand": "Adidas",
     "size": [
-      { "value": "S", "text": "S" },
-      { "value": "M", "text": "M" },
-      { "value": "L", "text": "L" },
-      { "value": "XL", "text": "XL" }
+      { "value": "4호", "text": "4호" },
+      { "value": "5호", "text": "5호" }
     ]
   }
 ]
