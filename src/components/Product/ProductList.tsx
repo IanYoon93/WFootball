@@ -83,7 +83,7 @@ const ProductList = ({ title, limit, selectedCategory, selectedBrand }: Items): 
           products.map((product: Product) => (
             <div className={styles.productCard} key={product.id}>
               <Link to={`/${product.id}`} className={styles.productCard} key={product.id}>
-                <img className={styles.productImg} src={product.img} alt="상품 이미지" />
+                <img className={styles.productImg} key={product.id} src={product.img.replace(/^public\/|^src\//, '/')} alt="상품 이미지" />
                 <div className={styles.productInfo}>
                   <p className={styles.cardTitle}>{product.title}</p>
                 </div>
