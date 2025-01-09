@@ -14,34 +14,26 @@ export interface Product {
   readonly size: Array<{ value: string; text: string }>;
 }
 
-const saveData = (data: Product[]) => {
-  localStorage.setItem('productsData', JSON.stringify(data));
-};
+// const saveData = (data: Product[]) => {
+//   localStorage.setItem('productsData', JSON.stringify(data));
+// };
 
-const getData = () => {
-  const data = localStorage.getItem('productsData');
-  return data ? JSON.parse(data) : [];
-};
+// const getData = () => {
+//   const data = localStorage.getItem('productsData');
+//   return data ? JSON.parse(data) : [];
+// };
 
-const response = await fetch(productsURL);
-const data = await response.json();
+// const response = await fetch(productsURL);
+// const data = await response.json();
 
-console.log(data);
+// console.log(data);
 
 export const productsList = selector({
   key: 'productList',
   get: async () => {
     try {
-      const storeData = getData();
-
-      if (storeData.length > 0) {
-        return storeData;
-      }
-
       const response = await fetch(productsURL);
       const data = await response.json();
-
-      saveData(data);
 
       // 데이터 확인
       console.log('Loaded Products:', data);
