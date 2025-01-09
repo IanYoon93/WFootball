@@ -17,7 +17,7 @@ const ProductDetailed = (): JSX.Element => {
 
   const [cart, setCart] = useRecoilState<CartState>(cartState);
   const [wishlist, setWishlist] = useRecoilState<WishlistState>(wishlistState);
-  const [selectedSize, setSelectedSize] = useState<string>('');
+  const [selectedSize, setSelectedSize] = useState<Record<string, number>>({});
   const [quantity, setQuantity] = useState<number>(1);
 
   const addToCartHandler = useCallback(
@@ -39,19 +39,31 @@ const ProductDetailed = (): JSX.Element => {
   }
 
   // 사이즈 선택 기능
-  const handelChangeSize = (e: React.MouseEvent<HTMLButtonElement>) => {
-    // 버튼의 value 값으로 선택된 사이즈 변경
-    setSelectedSize(e.currentTarget.value);
+  const handleChangeSize = (size: string) => {
+    setSelectedSize((prevSizes) => ({
+      ...prevSizes,
+
+      // 초기 수량이 없다면 1로 설정
+      [size]: prevSizes[size] || 1,
+    }));
   };
 
   // 수량 증가
-  const increaseQuantity = () => {
-    setQuantity((prevQuantity) => prevQuantity + 1);
+  const increaseQuantity = (size: string) => {
+    setSelectedSize((prevSizes) => ({
+      ...prevSizes,
+      [size]: prevSizes[size] + 1,
+    }));
   };
 
   // 수량 감소
-  const decreaseQuantity = () => {
-    setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  const decreaseQuantity = (size: string) => {
+    setSelectedSize((prevSizes) => ({
+      ...prevSizes,
+
+      // 최소 수량 1
+      [size]: prevSizes[size] > 1 ? prevSizes[size] - 1 : 1,
+    }));
   };
 
   return (
@@ -63,27 +75,27 @@ const ProductDetailed = (): JSX.Element => {
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
           <div className={styles.sizeArea}>
-            {product.size?.map((size) => (
-              <button key={size.value} type="button" value={size.value} className={`${styles.btnSize} ${selectedSize === size.value ? styles.selected : ''}`} onClick={handelChangeSize}>
-                {size.text}
+            {product.size?.map(({ value, text }) => (
+              <button key={value} type="button" className={`${styles.btnSize} ${selectedSize[value] ? styles.selected : ''}`} onClick={() => handleChangeSize(value)}>
+                {text}
               </button>
             ))}
           </div>
-          {selectedSize && (
-            <div className={styles.selectedSize}>
-              <p>{selectedSize}</p>
+          {Object.entries(selectedSize).map(([size, quantity]) => (
+            <div key={size} className={styles.selectedSize}>
+              <p>{size}</p>
               <div className={styles.btnGroup}>
-                <button type="button" className={styles.btn} onClick={decreaseQuantity}>
+                <button type="button" className={styles.btn} onClick={() => decreaseQuantity(size)}>
                   -
                 </button>
                 <div className={styles.count}>{quantity}</div>
-                <button type="button" className={styles.btn} onClick={increaseQuantity}>
+                <button type="button" className={styles.btn} onClick={() => increaseQuantity(size)}>
                   +
                 </button>
               </div>
               <div className={styles.total}>{product.price * quantity}원</div>
             </div>
-          )}
+          ))}
           <div className={styles.btnArea}>
             <div className={styles.btnTopArea}>
               <button type="button" className={styles.btnWishlist} onClick={() => addToWishlistHandler(product.id?.toString())}>
