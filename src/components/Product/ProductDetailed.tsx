@@ -57,7 +57,7 @@ const ProductDetailed = (): JSX.Element => {
     <section className={styles.content}>
       <BreadCrumbs category={product.category} crumb={product.title} />
       <div className={styles.productDetail}>
-        <img className={styles.productImg} src={product.img} alt={product.title} />
+        <img className={styles.productImg} src={product.img.replace(/^public\/|^src\//, '/')} alt={product.title} />
         <div className={styles.productInfo}>
           <p className={styles.title}>{product.title}</p>
           <p className={styles.price}>{product.price} 원</p>
