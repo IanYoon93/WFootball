@@ -40,30 +40,37 @@ const ProductDetailed = (): JSX.Element => {
 
   // 사이즈 선택 기능
   const handleChangeSize = (size: string) => {
-    setSelectedSize((prevSizes) => ({
-      ...prevSizes,
-
-      // 초기 수량이 없다면 1로 설정
-      [size]: prevSizes[size] || 1,
-    }));
+    setSelectedSize((prevSizes) => {
+      const newSizes = { ...prevSizes };
+      if (!newSizes[size]) {
+        // 처음 선택할 경우 수량 1로 설정
+        newSizes[size] = 1;
+      }
+      return newSizes;
+    });
   };
 
   // 수량 증가
   const increaseQuantity = (size: string) => {
-    setSelectedSize((prevSizes) => ({
-      ...prevSizes,
-      [size]: prevSizes[size] + 1,
-    }));
+    setSelectedSize((prevSizes) => {
+      const newSizes = { ...prevSizes };
+      newSizes[size] = newSizes[size] + 1;
+      return newSizes;
+    });
   };
 
   // 수량 감소
   const decreaseQuantity = (size: string) => {
-    setSelectedSize((prevSizes) => ({
-      ...prevSizes,
-
-      // 최소 수량 1
-      [size]: prevSizes[size] > 1 ? prevSizes[size] - 1 : 1,
-    }));
+    setSelectedSize((prevSizes) => {
+      const updatedSizes = { ...prevSizes };
+      if (updatedSizes[size] > 1) {
+        updatedSizes[size] -= 1;
+      } else {
+        // 수량이 1이면 해당 사이즈를 삭제
+        delete updatedSizes[size];
+      }
+      return updatedSizes;
+    });
   };
 
   return (
