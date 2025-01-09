@@ -27,7 +27,7 @@ const CartList = ({ data }: Item): JSX.Element => {
     <div className={styles.cartList}>
       <Link to={`/${data.id}`} key={data.id}>
         <figure className={styles.figure}>
-          <img src={data.image.replace(/^public\/|^src\//, '/')} alt={data.title} className={styles.cartItemImg} />
+          <img src={data.image} alt={data.title} className={styles.cartItemImg} />
         </figure>
       </Link>
       <div className={styles.cartItemInfo}>
@@ -36,9 +36,7 @@ const CartList = ({ data }: Item): JSX.Element => {
             {data.title}
           </Link>
         </h3>
-        <p className={styles.cartItemPrice}>
-          {data.price}원<span className={styles.priceText}>( {data.price / data.count} 원)</span>
-        </p>
+        <p className={styles.cartItemPrice}>{data.price.toLocaleString()}원</p>
         <div className={styles.cartActions}>
           <div className={styles.btnGroup}>
             <button type="button" onClick={() => removeFromCartHandler(data.id)} className={styles.btn}>

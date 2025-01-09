@@ -87,7 +87,7 @@ const ProductList = ({ title, limit, selectedCategory, selectedBrand }: Items): 
                 <div className={styles.productInfo}>
                   <p className={styles.cardTitle}>{product.title}</p>
                 </div>
-                <p className={styles.price}>{product.price} 원</p>
+                <p className={styles.price}>{product.price.toLocaleString()} 원</p>
               </Link>
             </div>
           ))

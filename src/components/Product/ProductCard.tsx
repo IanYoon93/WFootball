@@ -20,7 +20,7 @@ const ProductCard = ({ products, limit }: { products: Product[]; limit: number }
             <div className={styles.productInfo}>
               <p className={styles.title}>{product.title}</p>
             </div>
-            <p className={styles.price}>{product.price} 원</p>
+            <p className={styles.price}>{product.price.toLocaleString()} 원</p>
           </Link>
         </div>
       ))}

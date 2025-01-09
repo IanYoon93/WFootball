@@ -31,7 +31,7 @@ const WishListItem = ({ data }: Item): JSX.Element => {
             {data.title}
           </Link>
         </h3>
-        <p className={styles.wishlistITemPrice}>{data.price}원</p>
+        <p className={styles.wishlistITemPrice}>{data.price.toLocaleString()}원</p>
         <button type="button" onClick={() => removeFromWishlistHandler(data.id)} className={styles.btn}>
           삭제하기
         </button>

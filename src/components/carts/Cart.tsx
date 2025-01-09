@@ -30,7 +30,7 @@ const Cart = (): JSX.Element => {
               : ''}
           </div>
           <div className={styles.add}>
-            <span className={styles.total}>총 : {totalPrice} 원</span>
+            <span className={styles.total}>총 : {totalPrice.toLocaleString()} 원</span>
             <label htmlFor="confirm-modal" className={styles.btnModal}>
               구매하기
             </label>

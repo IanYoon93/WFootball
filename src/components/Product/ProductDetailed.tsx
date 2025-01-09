@@ -80,7 +80,7 @@ const ProductDetailed = (): JSX.Element => {
         <img className={styles.productImg} src={product.img.replace(/^public\/|^src\//, '/')} alt={product.title} />
         <div className={styles.productInfo}>
           <p className={styles.title}>{product.title}</p>
-          <p className={styles.price}>{product.price} 원</p>
+          <p className={styles.price}>{product.price.toLocaleString()} 원</p>
           <div className={styles.sizeArea}>
             {product.size?.map(({ value, text }) => (
               <button key={value} type="button" className={`${styles.btnSize} ${selectedSize[value] ? styles.selected : ''}`} onClick={() => handleChangeSize(value)}>
@@ -100,7 +100,7 @@ const ProductDetailed = (): JSX.Element => {
                   +
                 </button>
               </div>
-              <div className={styles.total}>{product.price * quantity}원</div>
+              <div className={styles.total}>{(product.price * quantity).toLocaleString()}원</div>
             </div>
           ))}
           <div className={styles.btnArea}>
