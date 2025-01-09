@@ -27,7 +27,7 @@ const CartList = ({ data }: Item): JSX.Element => {
     <div className={styles.cartList}>
       <Link to={`/${data.id}`} key={data.id}>
         <figure className={styles.figure}>
-          <img src={data.image} alt={data.title} className={styles.cartItemImg} />
+          <img src={data.image.replace(/^public\/|^src\//, '/')} alt={data.title} className={styles.cartItemImg} />
         </figure>
       </Link>
       <div className={styles.cartItemInfo}>

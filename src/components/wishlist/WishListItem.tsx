@@ -22,7 +22,7 @@ const WishListItem = ({ data }: Item): JSX.Element => {
     <div className={styles.wishListItem}>
       <Link to={`/${data.id}`}>
         <figure className={styles.figure}>
-          <img src={data.image} alt={data.title} className={styles.wishlistITemImg} />
+          <img src={data.image.replace(/^public\/|^src\//, '/')} alt={data.title} className={styles.wishlistITemImg} />
         </figure>
       </Link>
       <div className={styles.wishlistITemInfo}>
