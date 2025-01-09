@@ -14,6 +14,15 @@ export interface Product {
   readonly size: Array<{ value: string; text: string }>;
 }
 
+const saveData = (data: Product[]) => {
+  localStorage.setItem('productsData', JSON.stringify(data));
+};
+
+const getData = () => {
+  const data = localStorage.getItem('productsData');
+  return data ? JSON.parse(data) : [];
+};
+
 const response = await fetch(productsURL);
 const data = await response.json();
 
@@ -23,10 +32,27 @@ export const productsList = selector({
   key: 'productList',
   get: async () => {
     try {
+      const storeData = getData();
+
+      if (storeData.length > 0) {
+        return storeData;
+      }
+
       const response = await fetch(productsURL);
       const data = await response.json();
 
-      return data;
+      saveData(data);
+
+      // 데이터 확인
+      console.log('Loaded Products:', data);
+
+      // 모든 product에 size 속성이 있는지 검증
+      data.forEach((product: any, index: number) => {
+        console.log(`Product ${index}:`, product);
+        console.log(`Product ${index} size:`, product.size);
+      });
+
+      return data || [];
     } catch (error) {
       console.error(`Error loading products: ${error}`);
       return [];
