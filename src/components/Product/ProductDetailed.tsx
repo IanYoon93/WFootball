@@ -8,7 +8,7 @@ import { CartState, addToCart, cartState, removeFromCart } from '../../store/car
 import ProductLoad from './ProductLoad';
 import { WishlistState, addToWishList, wishlistState } from '../../store/wishlist';
 
-// TODO: 바로 구매하기 클릭시 기능 추가, 쿠폰 기능 추가해보기
+// TODO: 바로 구매하기 클릭시 주문서 페이지 이동 기능 추가
 const ProductDetailed = (): JSX.Element => {
   const productsLoadable = useRecoilValueLoadable<Product[]>(productsList);
   const products: Product[] = 'hasValue' === productsLoadable.state ? productsLoadable.contents : [];
