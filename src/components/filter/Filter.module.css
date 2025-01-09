@@ -36,7 +36,7 @@
     flex-direction: column;
     width: 100px;
     height: auto;
-    padding: 37px 16px 0;
+    padding: 37px 16px 5px;
     color: #fff;
     cursor: pointer;
     border: 1px solid #cacacb;
@@ -54,7 +54,7 @@
 
 @media (max-width: 1024px) {
   .btnSelect {
-    width: 94px;
+    width: 115px;
   }
 
   .icon {
@@ -62,7 +62,7 @@
   }
 
   .selectOption {
-    width: 60px;
+    width: 81px;
     height: auto;
   }
 
