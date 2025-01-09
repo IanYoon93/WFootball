@@ -1447,10 +1447,10 @@
     "category": "상의",
     "brand": "Nike",
     "size": [
-      { "value": "s", "text": "S" },
-      { "value": "m", "text": "M" },
-      { "value": "l", "text": "L" },
-      { "value": "xl", "text": "XL" }
+      { "value": "S", "text": "S" },
+      { "value": "M", "text": "M" },
+      { "value": "L", "text": "L" },
+      { "value": "XL", "text": "XL" }
     ]
   },
   {
@@ -1461,10 +1461,10 @@
     "category": "상의",
     "brand": "Nike",
     "size": [
-      { "value": "s", "text": "S" },
-      { "value": "m", "text": "M" },
-      { "value": "l", "text": "L" },
-      { "value": "xl", "text": "XL" }
+      { "value": "S", "text": "S" },
+      { "value": "M", "text": "M" },
+      { "value": "L", "text": "L" },
+      { "value": "XL", "text": "XL" }
     ]
   },
   {
@@ -1475,10 +1475,10 @@
     "category": "상의",
     "brand": "Nike",
     "size": [
-      { "value": "s", "text": "S" },
-      { "value": "m", "text": "M" },
-      { "value": "l", "text": "L" },
-      { "value": "xl", "text": "XL" }
+      { "value": "S", "text": "S" },
+      { "value": "M", "text": "M" },
+      { "value": "L", "text": "L" },
+      { "value": "XL", "text": "XL" }
     ]
   },
   {
